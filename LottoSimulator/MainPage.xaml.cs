@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
+using System.Device.Location;
 
 namespace LottoSimulator
 {
@@ -26,6 +27,7 @@ namespace LottoSimulator
         LottoMachine machine;
         Popup highscorePopup;
         TextBox playerNameTextBox;
+        GeoCoordinate coords;
 
         private long euroCounter = 0;
         private int jackpotCounter = 0;
@@ -293,7 +295,14 @@ namespace LottoSimulator
         {
             try
             {
-                Lotto highScore = new Lotto { Id = Guid.NewGuid().ToString(), WinningRow = highestLotto.ToString(), Cost = EuroCounter, playerName = playerNameTextBox.Text };
+                coords = new GeoCoordinate();
+                Lotto highScore = new Lotto { Id = Guid.NewGuid().ToString(),
+                    WinningRow = highestLotto.ToString(), 
+                    Cost = EuroCounter, 
+                    playerName = playerNameTextBox.Text,
+                    latitude = coords.Latitude,
+                    longtitude = coords.Longitude
+                };
                 await App.MobileService.GetTable<Lotto>().InsertAsync(highScore);
             }
             catch (Exception ex)

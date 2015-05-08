@@ -33,8 +33,8 @@ namespace LottoSimulatorService
         {
             List<Lotto> todoItems = new List<Lotto>
             {
-                new Lotto { Id = Guid.NewGuid().ToString(), WinningRow = "First item", playerName = "testi1", Cost = 1 },
-                new Lotto { Id = Guid.NewGuid().ToString(), WinningRow = "Second item", playerName = "test2", Cost = 2 },
+                new Lotto { Id = Guid.NewGuid().ToString(), WinningRow = "First item", playerName = "testi1", Cost = 1, latitude = 1.0 , longitude = 1.0 },
+                new Lotto { Id = Guid.NewGuid().ToString(), WinningRow = "Second item", playerName = "test2", Cost = 2, latitude = 1.0 , longitude = 1.0 },
             };
 
             foreach (Lotto todoItem in todoItems)

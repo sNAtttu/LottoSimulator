@@ -16,5 +16,9 @@ namespace LottoSimulator.Model
         public long Cost { get; set; }
         [JsonProperty(PropertyName = "playerName")] 
         public string playerName { get; set; }
+        [JsonProperty(PropertyName = "longtitude")]
+        public double longtitude {get;set;}
+        [JsonProperty(PropertyName = "latitude")]
+        public double latitude { get; set; }
     }
 }
