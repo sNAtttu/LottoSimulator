@@ -310,12 +310,12 @@ namespace LottoSimulator
         {
             try
             {
-                Debug.WriteLine(tempLongtitude.ToString());
-                Debug.WriteLine(tempLatitude.ToString());
                 Lotto highScore = new Lotto { Id = Guid.NewGuid().ToString(),
                     WinningRow = highestLotto.ToString(), 
                     Cost = EuroCounter, 
-                    playerName = playerNameTextBox.Text
+                    playerName = playerNameTextBox.Text,
+                    latitude = TempLatitude,
+                    longtitude = TempLongtitude
                 };
                 await App.MobileService.GetTable<Lotto>().InsertAsync(highScore);
             }
@@ -347,7 +347,7 @@ namespace LottoSimulator
                 tempLatitude = myGeocoordinate.Point.Position.Latitude;
                 tempLongtitude = myGeocoordinate.Point.Position.Longitude;
 
-                JackPotText.Text = "paikannus onnistui!";
+                JackpotStatusBox.Text = "paikannus onnistui!";
             }
             catch (Exception ex)
             {
