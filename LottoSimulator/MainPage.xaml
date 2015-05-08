@@ -40,7 +40,7 @@
             <TextBlock x:Name="EuroCounterText" HorizontalAlignment="Left" Margin="187,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-1.15,0.574" Text="0 Euroa"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,191,0,0" TextWrapping="Wrap" Text="Päävoittoja:" VerticalAlignment="Top"/>
             <TextBlock x:Name="JackPotText" HorizontalAlignment="Left" Margin="187,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0 kappaletta"/>
-            <Button x:Name="PlayUntilWin" Content="Pelaa kunnes JACKPOT" HorizontalAlignment="Center" Margin="-5,0,149,83" VerticalAlignment="Bottom" Width="312" Click="PlayUntilWin_Click"/>
+            <Button x:Name="PlayUntilWin" Content="Pelaa kunnes JACKPOT" HorizontalAlignment="Center" Margin="-5,0,174,83" VerticalAlignment="Bottom" Width="287" Click="PlayUntilWin_Click"/>
             <TextBlock x:Name="JackpotStatusBox" HorizontalAlignment="Left" Margin="10,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
             <Button x:Name="UpdateEuros" Content="Päivitä" HorizontalAlignment="Right" Margin="0,0,10,160" VerticalAlignment="Bottom" Width="214" Click="UpdateEuros_Click"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,223,0,0" TextWrapping="Wrap" Text="Paras tulos:" VerticalAlignment="Top"/>
@@ -48,7 +48,8 @@
             <TextBlock x:Name="winrow" HorizontalAlignment="Left" Margin="10,255,0,0" TextWrapping="Wrap" Text="Voittoisin rivi:" VerticalAlignment="Top"/>
             <TextBlock x:Name="HighestRowText" HorizontalAlignment="Left" Margin="187,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0" Width="244"/>
             <Button x:Name="CancelTask" Content="STOP" HorizontalAlignment="Center" Margin="287,0,10,83" VerticalAlignment="Bottom" Width="159" Click="CancelTask_Click"/>
-            <Button x:Name="uploadHighscore" IsEnabled="True" Content="TALLENNA JACKPOT!" HorizontalAlignment="Left" Margin="-5,525,0,0" VerticalAlignment="Top" Width="451" Click="uploadHighscore_Click"/>
+            <Button x:Name="uploadHighscore" IsEnabled="True" Content="TALLENNA JACKPOT!" HorizontalAlignment="Left" Margin="-5,520,0,0" VerticalAlignment="Top" Width="287" Click="uploadHighscore_Click"/>
+            <Button x:Name="LocateMe" Content="Paikanna" HorizontalAlignment="Left" Margin="287,520,0,0" VerticalAlignment="Top" Width="159" Click="LocateMe_Click"/>
         </Grid>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are

@@ -16,6 +16,7 @@ using System.Threading;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
 using System.Device.Location;
+using Windows.Devices.Geolocation;
 
 namespace LottoSimulator
 {
@@ -27,11 +28,25 @@ namespace LottoSimulator
         LottoMachine machine;
         Popup highscorePopup;
         TextBox playerNameTextBox;
-        GeoCoordinate coords;
 
         private long euroCounter = 0;
         private int jackpotCounter = 0;
         private int largestHit = 0;
+
+        private double tempLongtitude;
+
+        public double TempLongtitude
+        {
+            get { return tempLongtitude; }
+            set { tempLongtitude = value; }
+        }
+        private double tempLatitude;
+
+        public double TempLatitude
+        {
+            get { return tempLatitude; }
+            set { tempLatitude = value; }
+        }
 
         private bool cancelJackpot = false;
         public int LargestHit
@@ -295,20 +310,19 @@ namespace LottoSimulator
         {
             try
             {
-                coords = new GeoCoordinate();
+                Debug.WriteLine(tempLongtitude.ToString());
+                Debug.WriteLine(tempLatitude.ToString());
                 Lotto highScore = new Lotto { Id = Guid.NewGuid().ToString(),
                     WinningRow = highestLotto.ToString(), 
                     Cost = EuroCounter, 
-                    playerName = playerNameTextBox.Text,
-                    latitude = coords.Latitude,
-                    longtitude = coords.Longitude
+                    playerName = playerNameTextBox.Text
                 };
                 await App.MobileService.GetTable<Lotto>().InsertAsync(highScore);
             }
             catch (Exception ex)
             {
                 JackpotStatusBox.Text = ex.Message;
-                Debug.WriteLine(ex.InnerException.ToString());
+                Debug.WriteLine("ONGELMA: " + ex.Message + " " + ex.InnerException.ToString());
             }
             highscorePopup.IsOpen = false;
         }
@@ -320,6 +334,26 @@ namespace LottoSimulator
         private void HelpMenu_Click(object sender, EventArgs e)
         {
             NavigationService.Navigate(new Uri("/Views/HelpMenu/HelpMenu.xaml", UriKind.Relative));
+        }
+
+        private async void LocateMe_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Geolocator myGeolocator = new Geolocator();
+                Geoposition myGeoposition = await myGeolocator.GetGeopositionAsync();
+                Geocoordinate myGeocoordinate = myGeoposition.Coordinate;
+
+                tempLatitude = myGeocoordinate.Point.Position.Latitude;
+                tempLongtitude = myGeocoordinate.Point.Position.Longitude;
+
+                JackPotText.Text = "paikannus onnistui!";
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                JackPotText.Text = ex.Message;
+            }
         }
     }
 }
