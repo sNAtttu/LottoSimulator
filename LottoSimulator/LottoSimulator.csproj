@@ -116,6 +116,9 @@
     <Compile Include="Views\HighScores\HighScores.xaml.cs">
       <DependentUpon>HighScores.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\JackpotMap\JackpotMap.xaml.cs">
+      <DependentUpon>JackpotMap.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MakeLotto\MakeLotto.xaml.cs">
       <DependentUpon>MakeLotto.xaml</DependentUpon>
     </Compile>
@@ -134,6 +137,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\HighScores\HighScores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\JackpotMap\JackpotMap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

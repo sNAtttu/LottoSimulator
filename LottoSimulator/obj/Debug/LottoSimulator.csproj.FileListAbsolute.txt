@@ -128,3 +128,4 @@ C:\Users\santeri.nousiainen\Source\Repos\LottoSimulator\LottoSimulator\obj\Debug
 C:\Users\santeri.nousiainen\Source\Repos\LottoSimulator\LottoSimulator\obj\Debug\MDILProjectFiles.xml
 C:\Users\santeri.nousiainen\Source\Repos\LottoSimulator\LottoSimulator\obj\Debug\XapCacheFile.xml
 C:\Users\santeri.nousiainen\Source\Repos\LottoSimulator\LottoSimulator\obj\Debug\LottoSimulator.csprojResolveAssemblyReference.cache
+C:\Users\santeri.nousiainen\Source\Repos\LottoSimulator\LottoSimulator\obj\Debug\Views\JackpotMap\JackpotMap.g.cs

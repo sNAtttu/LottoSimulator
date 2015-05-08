@@ -1,9 +1,11 @@
 ﻿using LottoSimulator.Engine;
 using System;
 using System.Collections.Generic;
+using System.Device.Location;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Devices.Geolocation;
 
 namespace LottoSimulator.Model
 {
@@ -87,7 +89,6 @@ namespace LottoSimulator.Model
             ExtraOne = 8;
             ExtraTwo = 9;
         }
-
         public override string ToString()
         {
             return OneBall.ToString() + " "

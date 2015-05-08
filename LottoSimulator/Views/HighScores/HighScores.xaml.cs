@@ -34,5 +34,10 @@ namespace LottoSimulator.Views.HighScores
                 Debug.WriteLine(ex.Message);
             }
         }
+
+        private void MapOfLuckButton_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Views/JackpotMap/JackpotMap.xaml", UriKind.Relative));
+        }
     }
 }
