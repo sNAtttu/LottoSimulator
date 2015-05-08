@@ -1,0 +1,70 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="LottoSimulator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="PortraitUp"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="0,17,0,28">
+            <TextBlock Text="Lotto Simulaattori" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0" FontSize="36"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="14,0,10,0">
+            <TextBlock x:Name="HeaderBlock" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Voittonumerot:" VerticalAlignment="Top" FontSize="24"/>
+            <TextBlock x:Name="ResultNumbers" HorizontalAlignment="Left" Margin="187,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <Button x:Name="PlayButton" Content="Arvonta" HorizontalAlignment="Right" Margin="0,0,10,227" VerticalAlignment="Bottom" Width="214" Click="PlayButton_Click"/>
+            <Button x:Name="MakeLottoButton" Content="Luo kuponki" HorizontalAlignment="Left" Margin="-5,0,0,227" VerticalAlignment="Bottom" Width="237" Click="MakeLotto_Click"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" FontSize="24" Text="Rivisi:
+"/>
+            <TextBlock x:Name="playerNumbers" HorizontalAlignment="Left" Margin="187,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <TextBlock x:Name="LotteryResults" HorizontalAlignment="Left" Margin="10,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <Button x:Name="ResetButton" Content="Reset" HorizontalAlignment="Left" Margin="-5,0,0,160" VerticalAlignment="Bottom" Width="237" Height="72" Click="ResetButton_Click"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,159,0,0" TextWrapping="Wrap" Text="Rahaa kulunut:" VerticalAlignment="Top" Width="302"/>
+            <TextBlock x:Name="EuroCounterText" HorizontalAlignment="Left" Margin="187,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-1.15,0.574" Text="0 Euroa"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,191,0,0" TextWrapping="Wrap" Text="Päävoittoja:" VerticalAlignment="Top"/>
+            <TextBlock x:Name="JackPotText" HorizontalAlignment="Left" Margin="187,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0 kappaletta"/>
+            <Button x:Name="PlayUntilWin" Content="Pelaa kunnes JACKPOT" HorizontalAlignment="Center" Margin="-5,0,149,83" VerticalAlignment="Bottom" Width="312" Click="PlayUntilWin_Click"/>
+            <TextBlock x:Name="JackpotStatusBox" HorizontalAlignment="Left" Margin="10,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+            <Button x:Name="UpdateEuros" Content="Päivitä" HorizontalAlignment="Right" Margin="0,0,10,160" VerticalAlignment="Bottom" Width="214" Click="UpdateEuros_Click"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,223,0,0" TextWrapping="Wrap" Text="Paras tulos:" VerticalAlignment="Top"/>
+            <TextBlock x:Name="largestHitSoFar" HorizontalAlignment="Left" Margin="187,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0" RenderTransformOrigin="0.517,0.5"/>
+            <TextBlock x:Name="winrow" HorizontalAlignment="Left" Margin="10,255,0,0" TextWrapping="Wrap" Text="Voittoisin rivi:" VerticalAlignment="Top"/>
+            <TextBlock x:Name="HighestRowText" HorizontalAlignment="Left" Margin="187,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0" Width="244"/>
+            <Button x:Name="CancelTask" Content="STOP" HorizontalAlignment="Center" Margin="287,0,10,83" VerticalAlignment="Bottom" Width="159" Click="CancelTask_Click"/>
+            <Button x:Name="uploadHighscore" IsEnabled="True" Content="TALLENNA JACKPOT!" HorizontalAlignment="Left" Margin="-5,525,0,0" VerticalAlignment="Top" Width="451" Click="uploadHighscore_Click"/>
+        </Grid>
+
+        <!--Uncomment to see an alignment grid to help ensure your controls are
+            aligned on common boundaries.  The image has a top margin of -32px to
+            account for the System Tray. Set this to 0 (or remove the margin altogether)
+            if the System Tray is hidden.
+
+            Before shipping remove this XAML and the image itself.-->
+        <!--<Image Source="/Assets/AlignmentGrid.png" VerticalAlignment="Top" Height="800" Width="480" Margin="0,-32,0,0" Grid.Row="0" Grid.RowSpan="2" IsHitTestVisible="False" />-->
+    </Grid>
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem  Click="JackPotMenu_Click" Text="Jackpotit"/>
+                <shell:ApplicationBarMenuItem Click="HelpMenu_Click" Text="Ohjeet"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+</phone:PhoneApplicationPage>
