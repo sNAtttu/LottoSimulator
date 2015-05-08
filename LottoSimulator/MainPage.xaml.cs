@@ -308,6 +308,7 @@ namespace LottoSimulator
             catch (Exception ex)
             {
                 JackpotStatusBox.Text = ex.Message;
+                Debug.WriteLine(ex.InnerException.ToString());
             }
             highscorePopup.IsOpen = false;
         }

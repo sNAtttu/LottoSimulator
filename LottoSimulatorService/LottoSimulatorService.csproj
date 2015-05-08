@@ -223,6 +223,15 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\LottoController.cs" />
     <Compile Include="DataObjects\LottoModel.cs" />
+    <Compile Include="Migrations\201505081753055_Testoo.cs" />
+    <Compile Include="Migrations\201505081753055_Testoo.Designer.cs">
+      <DependentUpon>201505081753055_Testoo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505081805474_Initial.cs" />
+    <Compile Include="Migrations\201505081805474_Initial.Designer.cs">
+      <DependentUpon>201505081805474_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\MobileServiceContext.cs" />
     <Compile Include="ScheduledJobs\SampleJob.cs" />
     <Compile Include="Global.asax.cs">
@@ -250,7 +259,24 @@
     <Content Include="Performance\Microsoft.ServiceBus.MessagingPerformanceCounters.man" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\LottoSimulatorService - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LottoSimulatorService - FTP %283%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LottoSimulatorService - FTP %284%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LottoSimulatorService - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\LottoSimulatorService - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LottoSimulatorService - Web Deploy %283%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LottoSimulatorService - Web Deploy %284%29.pubxml" />
+    <None Include="Properties\PublishProfiles\LottoSimulatorService - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\mobile%24LottoSimulatorService.pubxml" />
+    <None Include="Properties\PublishProfiles\mobile-LottoSimulatorService.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201505081753055_Testoo.resx">
+      <DependentUpon>201505081753055_Testoo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505081805474_Initial.resx">
+      <DependentUpon>201505081805474_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

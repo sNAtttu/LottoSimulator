@@ -6,6 +6,8 @@ using System.Web.Http;
 using LottoSimulatorService.DataObjects;
 using LottoSimulatorService.Models;
 using Microsoft.WindowsAzure.Mobile.Service;
+using System.Data.Entity.Migrations;
+using LottoSimulatorService.Migrations;
 
 namespace LottoSimulatorService
 {
@@ -24,6 +26,8 @@ namespace LottoSimulatorService
             // config.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always;
 
             Database.SetInitializer(new MobileServiceInitializer());
+            //var migrator = new DbMigrator(new Configuration());
+            //migrator.Update();
         }
     }
 
@@ -33,8 +37,8 @@ namespace LottoSimulatorService
         {
             List<Lotto> todoItems = new List<Lotto>
             {
-                new Lotto { Id = Guid.NewGuid().ToString(), WinningRow = "First item", playerName = "testi1", Cost = 1, latitude = 1.0 , longitude = 1.0 },
-                new Lotto { Id = Guid.NewGuid().ToString(), WinningRow = "Second item", playerName = "test2", Cost = 2, latitude = 1.0 , longitude = 1.0 },
+                new Lotto { Id = Guid.NewGuid().ToString(), WinningRow = "First item", playerName = "testi1", Cost = 1, latitude = 1.0, longitude = 1.0 },
+                new Lotto { Id = Guid.NewGuid().ToString(), WinningRow = "Second item", playerName = "test2", Cost = 2, latitude = 1.0, longitude = 1.0 },
             };
 
             foreach (Lotto todoItem in todoItems)
