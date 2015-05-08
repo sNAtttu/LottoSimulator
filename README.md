@@ -1,0 +1,2 @@
+# LottoSimulator
+Windows Phone application
