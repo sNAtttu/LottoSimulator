@@ -30,11 +30,11 @@
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <maps:Map x:Name="MapOfLuck" HorizontalAlignment="Left" Margin="10,10,355,10" Width="339"/>
-            <phone:LongListSelector x:Name="MapOfLuckList" HorizontalAlignment="Left" Height="319" Margin="354,0,0,0" VerticalAlignment="Top" Width="340">
+            <phone:LongListSelector x:Name="MapOfLuckList" HorizontalAlignment="Left" Height="319" Margin="354,0,0,0" VerticalAlignment="Top" Width="340" SelectionChanged="MapOfLuckList_SelectionChanged">
                 <phone:LongListSelector.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Name="MapInfoPanel">
-                            <TextBlock x:Name="LottoLatitude" Text="{Binding latitude}"/><TextBlock Name="LottoLongtitude" Text="{Binding longtitude}"></TextBlock>
+                            <TextBlock x:Name="LottoLatitude" Text="{Binding playerName}"/>
                         </StackPanel>
                     </DataTemplate>
                 </phone:LongListSelector.ItemTemplate>

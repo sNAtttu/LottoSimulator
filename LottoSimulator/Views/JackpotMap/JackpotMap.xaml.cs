@@ -12,6 +12,8 @@ using LottoSimulator.Model;
 using System.Device.Location;
 using System.Windows.Media;
 using System.Diagnostics;
+using Microsoft.Phone.Maps.Controls;
+using System.Windows.Media.Imaging;
 
 namespace LottoSimulator.Views.JackpotMap
 {
@@ -19,17 +21,41 @@ namespace LottoSimulator.Views.JackpotMap
     {
         private MobileServiceCollection<Lotto, Lotto> highscores;
         private IMobileServiceTable<Lotto> highscoreTable = App.MobileService.GetTable<Lotto>();
+
+        Map mapOfLuck;
+        Image mapPin = new Image();
         public JackpotMap()
         {
             InitializeComponent();
+            mapOfLuck = MapOfLuck;
+            BitmapImage tn = new BitmapImage();
+            tn.SetSource(Application.GetResourceStream(new Uri(@"Assets/Map_pin1.png", UriKind.Relative)).Stream);
+            mapPin.Source = tn;
+            mapPin.Height = 50;
+            mapPin.Width = 50;
             ShowLottoLocation();
         }
         private async void ShowLottoLocation()
         {       
             highscores = await highscoreTable.ToCollectionAsync();
             MapOfLuckList.ItemsSource = highscores;
-            //foreach()
-            GeoCoordinate myloc = new GeoCoordinate { };
+        }
+
+        private void MapOfLuckList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if(MapOfLuckList != null && MapOfLuckList.SelectedItem != null)
+            {
+                var selectedLotto = (Lotto)MapOfLuckList.SelectedItem;
+                MapOverlay pin = new MapOverlay();
+                pin.Content = mapPin;
+                GeoCoordinate selectedLottoLocation = new GeoCoordinate { Longitude = selectedLotto.longtitude, Latitude = selectedLotto.latitude };
+                pin.GeoCoordinate = selectedLottoLocation;
+                MapLayer myLayer = new MapLayer();
+                myLayer.Add(pin);
+                mapOfLuck.Layers.Add(myLayer);
+                mapOfLuck.Center = selectedLottoLocation;
+                mapOfLuck.ZoomLevel = 12;
+            }      
         }
     }
 }
