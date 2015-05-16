@@ -72,6 +72,7 @@ namespace LottoSimulator
         {
             InitializeComponent();
             lotto = new LottoModel();
+            machine = new LottoMachine();
             highestLotto = new LottoModel();
             playerLotto = new LottoModel();
             highscorePopup = new Popup();
@@ -81,7 +82,6 @@ namespace LottoSimulator
 
         private void PlayButton_Click(object sender, RoutedEventArgs e)
         {
-            machine = new LottoMachine();
             lotto = machine.GenerateNumbers(lotto);
             ResultNumbers.Text = lotto.ToString() + " + " + lotto.ExtraOne + " " + lotto.ExtraTwo;
             int[] results = new int[2];
@@ -165,6 +165,7 @@ namespace LottoSimulator
             try
             {
                 JackpotStatusBox.Text = "Tarvittavien rivien määrän laskeminen käynnistetty.";
+                PlayUntilWin.IsEnabled = false;
                 List<string> data = await ProcessAsyncData();
                 Done();
             }
@@ -189,6 +190,11 @@ namespace LottoSimulator
                 JackpotStatusBox.Text = "Keskeytetty!";
                 cancelJackpot = false;
             }
+            PlayUntilWin.IsEnabled = true;
+            EuroCounterText.Text = EuroCounter.ToString() + " Euroa.";
+            largestHitSoFar.Text = LargestHit.ToString() + " oikein.";
+            ResultNumbers.Text = lotto.ToString() + " + " + lotto.ExtraOne + " " + lotto.ExtraTwo;
+            HighestRowText.Text = highestLotto.ToString() + " + " + highestLotto.ExtraOne + " " + highestLotto.ExtraTwo;
         }
 
         async Task<List<string>> ProcessAsyncData()
@@ -211,12 +217,7 @@ namespace LottoSimulator
                     int tempHit = 0;
                     results = machine.checkWinnings(playerLotto, lotto);
                     tempHit = results[0];
-                    if (tempHit == 7)
-                    {
-                        jackpot = true;
-                        result.Add(EuroCounter.ToString());
-                    }
-                    else
+                    if (tempHit != 7)
                     {
                         if (tempHit > LargestHit)
                         {
@@ -231,6 +232,12 @@ namespace LottoSimulator
                             highestLotto.ExtraOne = lotto.ExtraOne;
                             highestLotto.ExtraTwo = lotto.ExtraTwo;
                         }
+                    }
+                    else
+                    {
+                        LargestHit = tempHit;
+                        jackpot = true;
+                        result.Add(EuroCounter.ToString());
                     }
                     
                 }
@@ -249,6 +256,7 @@ namespace LottoSimulator
 
         private void CancelTask_Click(object sender, RoutedEventArgs e)
         {
+            PlayUntilWin.IsEnabled = true;
             cancelJackpot = true;
         }
 

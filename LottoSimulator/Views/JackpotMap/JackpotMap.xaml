@@ -30,7 +30,7 @@
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <maps:Map x:Name="MapOfLuck" HorizontalAlignment="Left" Margin="10,10,355,10" Width="339"/>
-            <phone:LongListSelector x:Name="MapOfLuckList" HorizontalAlignment="Left" Height="319" Margin="354,0,0,0" VerticalAlignment="Top" Width="340" SelectionChanged="MapOfLuckList_SelectionChanged">
+            <phone:LongListSelector x:Name="MapOfLuckList" HorizontalAlignment="Right" Height="319" Margin="0" VerticalAlignment="Top" Width="316" SelectionChanged="MapOfLuckList_SelectionChanged">
                 <phone:LongListSelector.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Name="MapInfoPanel">
