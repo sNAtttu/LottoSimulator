@@ -115,11 +115,6 @@ namespace LottoSimulator
             HighestRowText.Text = highestLotto.ToString() + " + " + highestLotto.ExtraOne + " " + highestLotto.ExtraTwo;
         }
 
-        private void MakeLotto_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Uri("/Views/MakeLotto/MakeLotto.xaml", UriKind.Relative));
-        }
-
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
@@ -146,18 +141,6 @@ namespace LottoSimulator
             playerLotto.SevenBall = tempNumbers[6];
 
             playerNumbers.Text = playerLotto.ToString();
-        }
-
-        private void ResetButton_Click(object sender, RoutedEventArgs e)
-        {
-            playerLotto = new LottoModel();
-            lotto = new LottoModel();
-            EuroCounter = 0;
-            playerNumbers.Text = playerLotto.ToString();
-            ResultNumbers.Text = lotto.ToString();
-            EuroCounterText.Text = EuroCounter.ToString() + " Euroa.";
-            JackpotCounter = 0;
-            JackPotText.Text = JackpotCounter.ToString() + " Kappaletta.";
         }
 
         private async void PlayUntilWin_Click(object sender, RoutedEventArgs e)
@@ -246,20 +229,6 @@ namespace LottoSimulator
             return t;
         }
 
-        private void UpdateEuros_Click(object sender, RoutedEventArgs e)
-        {
-            EuroCounterText.Text = EuroCounter.ToString() + " Euroa.";
-            largestHitSoFar.Text = LargestHit.ToString() + " oikein.";
-            ResultNumbers.Text = lotto.ToString() + " + " + lotto.ExtraOne + " " + lotto.ExtraTwo;
-            HighestRowText.Text = highestLotto.ToString() + " + " + highestLotto.ExtraOne + " " + highestLotto.ExtraTwo;
-        }
-
-        private void CancelTask_Click(object sender, RoutedEventArgs e)
-        {
-            PlayUntilWin.IsEnabled = true;
-            cancelJackpot = true;
-        }
-
         private void uploadHighscore_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -286,7 +255,7 @@ namespace LottoSimulator
                 textblock1.Margin = new Thickness(5.0);
                 playerNameTextBox = new TextBox();
                 playerNameTextBox.Margin = new Thickness(5.0);
-                playerNameTextBox.Width = 150;
+                playerNameTextBox.Width = 200;
                 panel1.Children.Add(textblock1);
                 panel1.Children.Add(playerNameTextBox);
                 panel1.Children.Add(button1);
@@ -326,13 +295,12 @@ namespace LottoSimulator
                     longtitude = TempLongtitude
                 };
                 await App.MobileService.GetTable<Lotto>().InsertAsync(highScore);
+                highscorePopup.IsOpen = false;
             }
             catch (Exception ex)
             {
                 JackpotStatusBox.Text = ex.Message;
-                Debug.WriteLine("ONGELMA: " + ex.Message + " " + ex.InnerException.ToString());
             }
-            highscorePopup.IsOpen = false;
         }
 
         private void JackPotMenu_Click(object sender, EventArgs e)
@@ -351,17 +319,45 @@ namespace LottoSimulator
                 Geolocator myGeolocator = new Geolocator();
                 Geoposition myGeoposition = await myGeolocator.GetGeopositionAsync();
                 Geocoordinate myGeocoordinate = myGeoposition.Coordinate;
-
                 tempLatitude = myGeocoordinate.Point.Position.Latitude;
                 tempLongtitude = myGeocoordinate.Point.Position.Longitude;
-
                 JackpotStatusBox.Text = "paikannus onnistui!";
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.Message);
                 JackPotText.Text = ex.Message;
             }
+        }
+
+        private void ApplicationBarIconButton_Click(object sender, EventArgs e)
+        {
+            PlayUntilWin.IsEnabled = true;
+            cancelJackpot = true;
+        }
+
+        private void ApplicationBarIconButton_Click_1(object sender, EventArgs e)
+        {
+            playerLotto = new LottoModel();
+            lotto = new LottoModel();
+            EuroCounter = 0;
+            playerNumbers.Text = playerLotto.ToString();
+            ResultNumbers.Text = lotto.ToString();
+            EuroCounterText.Text = EuroCounter.ToString() + " Euroa.";
+            JackpotCounter = 0;
+            JackPotText.Text = JackpotCounter.ToString() + " Kappaletta.";
+        }
+
+        private void ApplicationBarIconButton_Click_2(object sender, EventArgs e)
+        {
+            EuroCounterText.Text = EuroCounter.ToString() + " Euroa.";
+            largestHitSoFar.Text = LargestHit.ToString() + " oikein.";
+            ResultNumbers.Text = lotto.ToString() + " + " + lotto.ExtraOne + " " + lotto.ExtraTwo;
+            HighestRowText.Text = highestLotto.ToString() + " + " + highestLotto.ExtraOne + " " + highestLotto.ExtraTwo;
+        }
+
+        private void ApplicationBarIconButton_Click_3(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Views/MakeLotto/MakeLotto.xaml", UriKind.Relative));
         }
     }
 }
