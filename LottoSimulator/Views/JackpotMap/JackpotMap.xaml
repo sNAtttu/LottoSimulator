@@ -34,7 +34,7 @@
                 <phone:LongListSelector.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Name="MapInfoPanel">
-                            <TextBlock x:Name="LottoLatitude" Text="{Binding playerName}"/>
+                            <TextBlock x:Name="LottoLatitude" Text="{Binding playerName}" FontSize="26"/>
                         </StackPanel>
                     </DataTemplate>
                 </phone:LongListSelector.ItemTemplate>

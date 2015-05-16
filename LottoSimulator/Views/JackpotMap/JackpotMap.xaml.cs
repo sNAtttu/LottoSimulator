@@ -23,6 +23,8 @@ namespace LottoSimulator.Views.JackpotMap
         private IMobileServiceTable<Lotto> highscoreTable = App.MobileService.GetTable<Lotto>();
 
         Map mapOfLuck;
+        MapOverlay pin;
+        MapLayer myLayer;
         Image mapPin = new Image();
         public JackpotMap()
         {
@@ -33,6 +35,11 @@ namespace LottoSimulator.Views.JackpotMap
             mapPin.Source = tn;
             mapPin.Height = 50;
             mapPin.Width = 50;
+            myLayer = new MapLayer();
+            pin = new MapOverlay();
+            pin.Content = mapPin;
+            myLayer.Add(pin);
+            mapOfLuck.Layers.Add(myLayer);
             ShowLottoLocation();
         }
         private async void ShowLottoLocation()
@@ -46,15 +53,10 @@ namespace LottoSimulator.Views.JackpotMap
             if(MapOfLuckList != null && MapOfLuckList.SelectedItem != null)
             {
                 var selectedLotto = (Lotto)MapOfLuckList.SelectedItem;
-                MapOverlay pin = new MapOverlay();
-                pin.Content = mapPin;
                 GeoCoordinate selectedLottoLocation = new GeoCoordinate { Longitude = selectedLotto.longtitude, Latitude = selectedLotto.latitude };
                 pin.GeoCoordinate = selectedLottoLocation;
-                MapLayer myLayer = new MapLayer();
-                myLayer.Add(pin);
-                mapOfLuck.Layers.Add(myLayer);
                 mapOfLuck.Center = selectedLottoLocation;
-                mapOfLuck.ZoomLevel = 12;
+                mapOfLuck.ZoomLevel = 7;
             }      
         }
     }
