@@ -87,7 +87,7 @@ namespace LottoSimulator
             int[] results = new int[2];
             results = machine.checkWinnings(playerLotto, lotto);
             int tempHit = results[0];
-            LotteryResults.Text = "Sinulla oli oikein " + results[0] + " numeroa ja lisänumeroita oli oikein " + results[1] + " kappaletta.";
+            LotteryResults.Text = "You had " + results[0] + " numbers correct and " + results[1] + " extra number.";
             if (results[0] == 7)
             {
                 JackpotCounter++;
@@ -97,7 +97,7 @@ namespace LottoSimulator
                 if (tempHit > LargestHit)
                 {
                     LargestHit = tempHit;
-                    largestHitSoFar.Text = LargestHit.ToString() + " oikein.";
+                    largestHitSoFar.Text = LargestHit.ToString();
                     highestLotto.OneBall = lotto.OneBall;
                     highestLotto.TwoBall = lotto.TwoBall;
                     highestLotto.ThreeBall = lotto.ThreeBall;
@@ -110,8 +110,8 @@ namespace LottoSimulator
                 }
             }
             EuroCounter++;
-            EuroCounterText.Text = EuroCounter.ToString() + " Euroa.";
-            JackPotText.Text = JackpotCounter.ToString() + " Kappaletta.";
+            EuroCounterText.Text = EuroCounter.ToString() + " Euros.";
+            JackPotText.Text = JackpotCounter.ToString() + " times.";
             HighestRowText.Text = highestLotto.ToString() + " + " + highestLotto.ExtraOne + " " + highestLotto.ExtraTwo;
         }
 
@@ -147,7 +147,7 @@ namespace LottoSimulator
         {
             try
             {
-                JackpotStatusBox.Text = "Tarvittavien rivien määrän laskeminen käynnistetty.";
+                JackpotStatusBox.Text = "Lottery for 7/7 is on!";
                 PlayUntilWin.IsEnabled = false;
                 List<string> data = await ProcessAsyncData();
                 Done();
@@ -161,21 +161,21 @@ namespace LottoSimulator
         private void Done()
         {
             JackpotStatusBox.Text = "";
-            EuroCounterText.Text = EuroCounter.ToString() + " Euroa.";
-            JackPotText.Text = JackpotCounter.ToString() + " Kappaletta.";
+            EuroCounterText.Text = EuroCounter.ToString() + " Euros.";
+            JackPotText.Text = JackpotCounter.ToString() + " times.";
             if (!cancelJackpot)
             {
-                JackpotStatusBox.Text = "Alhaalta näet kuinka monta euroa joudut käyttämään saadaksesi päävoiton.";
+                JackpotStatusBox.Text = "Below you can see how many Euros it will take to get 7/7.";
                 JackpotCounter++;
             }
             else
             {
-                JackpotStatusBox.Text = "Keskeytetty!";
+                JackpotStatusBox.Text = "Interrupted!";
                 cancelJackpot = false;
             }
             PlayUntilWin.IsEnabled = true;
-            EuroCounterText.Text = EuroCounter.ToString() + " Euroa.";
-            largestHitSoFar.Text = LargestHit.ToString() + " oikein.";
+            EuroCounterText.Text = EuroCounter.ToString() + " Euros.";
+            largestHitSoFar.Text = LargestHit.ToString();
             ResultNumbers.Text = lotto.ToString() + " + " + lotto.ExtraOne + " " + lotto.ExtraTwo;
             HighestRowText.Text = highestLotto.ToString() + " + " + highestLotto.ExtraOne + " " + highestLotto.ExtraTwo;
         }
@@ -183,7 +183,7 @@ namespace LottoSimulator
         async Task<List<string>> ProcessAsyncData()
         {
             bool jackpot = false;
-            JackpotStatusBox.Text = "Tarvittavien rivien määrän laskeminen on käynnissä.";
+            JackpotStatusBox.Text = "Lottery for 7/7 is on!";
             var t = await Task.Run(() =>
             {
                 
@@ -245,11 +245,11 @@ namespace LottoSimulator
                 button1.Margin = new Thickness(5.0);
                 button1.Click += new RoutedEventHandler(button1_Click);
                 Button cancelUpload = new Button();
-                cancelUpload.Content = "Peruuta";
+                cancelUpload.Content = "Cancel";
                 cancelUpload.Margin = new Thickness(5.0);
                 cancelUpload.Click += new RoutedEventHandler(cancelUpload_Click);
                 TextBlock textblock1 = new TextBlock();
-                textblock1.Text = "Anna pelaajan nimi:";
+                textblock1.Text = "Player:";
                 textblock1.Foreground = new SolidColorBrush(Colors.White);
                 textblock1.FontSize = 20;
                 textblock1.Margin = new Thickness(5.0);
@@ -342,15 +342,15 @@ namespace LottoSimulator
             EuroCounter = 0;
             playerNumbers.Text = playerLotto.ToString();
             ResultNumbers.Text = lotto.ToString();
-            EuroCounterText.Text = EuroCounter.ToString() + " Euroa.";
+            EuroCounterText.Text = EuroCounter.ToString() + " Euros.";
             JackpotCounter = 0;
-            JackPotText.Text = JackpotCounter.ToString() + " Kappaletta.";
+            JackPotText.Text = JackpotCounter.ToString() + " times.";
         }
 
         private void ApplicationBarIconButton_Click_2(object sender, EventArgs e)
         {
-            EuroCounterText.Text = EuroCounter.ToString() + " Euroa.";
-            largestHitSoFar.Text = LargestHit.ToString() + " oikein.";
+            EuroCounterText.Text = EuroCounter.ToString() + " Euros.";
+            largestHitSoFar.Text = LargestHit.ToString();
             ResultNumbers.Text = lotto.ToString() + " + " + lotto.ExtraOne + " " + lotto.ExtraTwo;
             HighestRowText.Text = highestLotto.ToString() + " + " + highestLotto.ExtraOne + " " + highestLotto.ExtraTwo;
         }
