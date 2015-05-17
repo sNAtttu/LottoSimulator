@@ -73,7 +73,7 @@ namespace LottoSimulator.Views.MakeLotto
             button1.Margin = new Thickness(5.0);
             button1.Click += new RoutedEventHandler(button1_Click);
             TextBlock textblock1 = new TextBlock();
-            textblock1.Text = "Valitse 7 numeroa ja paina OK näppäintä.";
+            textblock1.Text = "You must choose seven numbers from below and press OK.";
             textblock1.Foreground = new SolidColorBrush(Colors.White);
             textblock1.FontSize = 16;
             textblock1.Margin = new Thickness(5.0);

@@ -16,45 +16,49 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <!--Pivot Control-->
-        <phone:Pivot Title="Lotto Simulaattori">
+        <phone:Pivot Title="Lottery Simulator">
             <!--Pivot item one-->
-            <phone:PivotItem Header="Peliohjeet">
+            <phone:PivotItem Header="Directions">
                 <TextBlock HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="583" Width="446">
-                	<Run Text="Peli toimii seuraavasti:"/>
+                	<Run Text="1. Press '+' button to make a lottery row. One row costs 1€."/>
                 	<LineBreak/>
-                	<Run Text="1. Paina &quot;Luo Kuponki&quot;"/>
-                	<Run Text=" Yksi rivi maksaa &quot;euron&quot;."/>
+                	<Run Text="2. Choose seven numbers for your row. "/>
                 	<LineBreak/>
-                	<Run Text="2. Luo Kuponki ruudussa valitse seitsemän (7) numeroa, jonka jälkeen painat OK-näppäintä. "/>
+                	<Run Text="3. You will return to main page. Now press Lottery or Play until 7/7."/>
                 	<LineBreak/>
-                	<Run Text="3. Kun muut numerot ovat harmaat, olet valinnut seitsemän (7) lukua."/>
+                	<Run Text="4. After first Lottery you can see results in screen. If you pressed Play until 7/7 press 'refresh'-button on appbar in main page to see your current cost and played rows."/>
                 	<LineBreak/>
-                	<Run Text="4. Nyt paina OK."/>
+                    <LineBreak/>
+                    <Run Text="Warning: Play until 7/7 can take a lot of time, depending on your luck."></Run>
                 	<LineBreak/>
-                	<Run Text="5. Palaat pääruutuun ja näet numerosi, paina arvonta."/>
+                	<Run Text="You can stop continuous lottery by pressing 'stop'-button in appbar menu on main page."/>
                 	<LineBreak/>
-                	<Run Text="6. Ensimmäisen arvonnan jälkeen näet jo tuloksesi."/>
-                	<LineBreak/>
-                	<Run Text="7. Nyt voit suorittaa joko uuden arvonnan tai laittaa puhelimen arpomaan niin pitkäksi aikaa että saat päävoiton"/>
-                	<Run Text=" (Varoitus: Tuurista riippuen kestää pitkään)"/>
-                	<Run Text="."/>
-                	<LineBreak/>
-                	<Run Text="8. Paina päivitä niin näet väliaikoja."/>
-                	<LineBreak/>
-                	<Run Text="9. Jos et jaksa paina &quot;Keskeytä&quot;"/>
-                	<LineBreak/>
-                	<Run Text="10. Jos olet niin onnekas että saat 7 oikein, voit päivittää tuloksen tietokantaan kaikkien nähtäväksi"/>
-                	<Run Text=", paitsi betaversiossa voit milloin vain"/>
-                	<Run Text="."/>
-                	<LineBreak/>
-                	<Run/>
+                    <LineBreak/>
+                	<Run Text="After you hit 7/7 (if you are that lucky) the 'save 7/7'-button will be enabled for you to upload highscore."/>
+                	 <LineBreak/>
+                    <Run/>
                 </TextBlock>
             </phone:PivotItem>
 
             <!--Pivot item two-->
             <phone:PivotItem Header="Credits">
                 <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="583" Width="423">
-            		<Run Text="Lotto Simulaattori on ohjelma jonka on tehnyt Santeri Nousiainen. Ohjelma on tehty kurssille Windows Phone Application Development. Tämän credits sivun tarkoitus on vain testata pivot sivun ominaisuuksia, joten sitä ei kannata ihmetellä. Tulee muuttumaan ajan saatossa."/>
+            		<Run Text="Lottery Simulator is a software which tries to simulate a real lottery."></Run>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run Text="Softwares main goal is to tell user how much money he/she has to spend for a full match in lottery. (This version uses only euros because Finland)"/>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run Text="Game Designer: Santeri Nousiainen"/>
+                    <LineBreak/>
+                    <Run Text="Game Development: Santeri Nousiainen"/>
+                    <LineBreak/>
+                    <Run Text="Graphical Design: Santeri Nousiainen"/>
+                    <LineBreak/>
+                    <Run Text="Programming: Santeri Nousiainen"/>
+                    <LineBreak/>
+                    <Run Text="Everything else: Santeri Nousiainen"/>
+                    <LineBreak/>
             		<Run/>
                 </TextBlock>
             </phone:PivotItem>

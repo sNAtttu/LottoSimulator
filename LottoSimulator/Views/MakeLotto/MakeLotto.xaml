@@ -22,8 +22,8 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="Lotto Simulaattori" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <Button x:Name="HelpButton" Content="Ohje" Click="HelpButton_Click"></Button>
+            <TextBlock Text="Lottery Simulator" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <Button x:Name="HelpButton" Content="Help" Click="HelpButton_Click"></Button>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->

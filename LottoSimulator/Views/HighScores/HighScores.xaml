@@ -22,8 +22,8 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="Lotto Simulaattori" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="Jackpotit!" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="Lottery Simulator" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="Jackpots!" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -52,8 +52,8 @@
                     </DataTemplate>
                 </phone:LongListSelector.ItemTemplate>
             </phone:LongListSelector>
-            <Button x:Name="refreshButton" Content="Päivitä" HorizontalAlignment="Left" Margin="568,243,0,0" VerticalAlignment="Top" Width="136" Height="76" Click="refreshButton_Click"/>
-            <Button x:Name="MapOfLuckButton" Content="Kartta" HorizontalAlignment="Left" Margin="568,171,0,0" VerticalAlignment="Top" Width="136" Click="MapOfLuckButton_Click"/>
+            <Button x:Name="refreshButton" Content="Refresh" HorizontalAlignment="Left" Margin="568,243,0,0" VerticalAlignment="Top" Width="136" Height="76" Click="refreshButton_Click"/>
+            <Button x:Name="MapOfLuckButton" Content="Map" HorizontalAlignment="Left" Margin="568,171,0,0" VerticalAlignment="Top" Width="136" Click="MapOfLuckButton_Click"/>
         </Grid>
     </Grid>
 
