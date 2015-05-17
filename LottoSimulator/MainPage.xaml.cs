@@ -28,6 +28,7 @@ namespace LottoSimulator
         LottoMachine machine;
         Popup highscorePopup;
         TextBox playerNameTextBox;
+        Button locationButton;
 
         private long euroCounter = 0;
         private int jackpotCounter = 0;
@@ -244,6 +245,10 @@ namespace LottoSimulator
                 button1.Content = "OK";
                 button1.Margin = new Thickness(5.0);
                 button1.Click += new RoutedEventHandler(button1_Click);
+                locationButton = new Button();
+                locationButton.Content = "Locate";
+                locationButton.Margin = new Thickness(5.0);
+                locationButton.Click += new RoutedEventHandler(LocateMe_Click);
                 Button cancelUpload = new Button();
                 cancelUpload.Content = "Cancel";
                 cancelUpload.Margin = new Thickness(5.0);
@@ -258,6 +263,7 @@ namespace LottoSimulator
                 playerNameTextBox.Width = 200;
                 panel1.Children.Add(textblock1);
                 panel1.Children.Add(playerNameTextBox);
+                panel1.Children.Add(locationButton);
                 panel1.Children.Add(button1);
                 panel1.Children.Add(cancelUpload);
                 border.Child = panel1;
@@ -316,12 +322,13 @@ namespace LottoSimulator
         {
             try
             {
+                locationButton.IsEnabled = false;
                 Geolocator myGeolocator = new Geolocator();
                 Geoposition myGeoposition = await myGeolocator.GetGeopositionAsync();
                 Geocoordinate myGeocoordinate = myGeoposition.Coordinate;
                 tempLatitude = myGeocoordinate.Point.Position.Latitude;
                 tempLongtitude = myGeocoordinate.Point.Position.Longitude;
-                JackpotStatusBox.Text = "paikannus onnistui!";
+                locationButton.IsEnabled = true;
             }
             catch (Exception ex)
             {
