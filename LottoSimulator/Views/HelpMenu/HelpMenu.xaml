@@ -20,30 +20,27 @@
             <!--Pivot item one-->
             <phone:PivotItem Header="Instructions">
                 <TextBlock HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="583" Width="446">
-                	<Run Text="1. Press '+' button to make a lottery row."/>
+                	<Run Text="1. Press '+'-button to make a lottery row."/>
                 	<LineBreak/>
                 	<Run Text="2. Choose seven numbers for your row."/>
                 	<LineBreak/>
                 	<Run Text="3. Now press 'Lottery'-Button or 'Make me a winner!'-Button."/>
                 	<LineBreak/>
-                	<Run Text="4. If you pressed 'Make me a winner' press 'refresh'-button on appbar in main page to see your current cost and played rows."/>
+                	<Run Text="4. If you pressed 'Make me a winner' press 'refresh'-button on appbar in main page to see your current cost and played rows. If you want to stop, press 'stop'-button."/>
                 	<LineBreak/>
                     <LineBreak/>
-                    <Run Text="Warning: Play until 7/7 can take a lot of time, depending on your luck."></Run>
-                	<LineBreak/>
-                	<Run Text="You can stop continuous lottery by pressing 'stop'-button in appbar menu on main page."/>
+                	<Run Text="After you hit 7/7 (if you are that lucky) the 'save full hit'-button will be enabled for you to upload highscore. If you want to upload location, press 'locate me' before 'OK'."/>
                 	<LineBreak/>
                     <LineBreak/>
-                	<Run Text="After you hit 7/7 (if you are that lucky) the 'save 7/7'-button will be enabled for you to upload highscore."/>
-                	 <LineBreak/>
+                    <Run Text="Highscores can be viewed from 'Highscores'-menu. You can also view winning locations by pressing 'maps'-button."></Run>
                     <Run/>
                 </TextBlock>
             </phone:PivotItem>
 
             <!--Pivot item two-->
-            <phone:PivotItem Header="Credits">
+            <phone:PivotItem Header="About">
                 <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="583" Width="423">
-            		<Run Text="Lottery Simulator is a software which tries to simulate a real lottery."></Run>
+            		<Run Text="Lottery Simulator is a software which tries to simulate a real lottery. There is no real money involved in software."></Run>
                     <LineBreak/>
                     <LineBreak/>
                     <Run Text="Softwares main goal is to tell user how much money he/she has to spend for a full match in lottery. (This version uses only euros because Finland)"/>
@@ -61,6 +58,75 @@
                     <LineBreak/>
             		<Run/>
                 </TextBlock>
+            </phone:PivotItem>
+            
+            <!--Pivot item three-->
+            <phone:PivotItem Header="Rules">
+                <Grid x:Name="Winnings" Grid.Row="1" Margin="12,0,12,10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Left" Margin="0,10,-4,0" TextWrapping="Wrap" Grid.Row="0" VerticalAlignment="Top" Height="195" Width="436">
+            		<Run Text="One game costs 1€ (No real money involved)."/>
+            		<LineBreak/>
+                    <LineBreak/>
+            		<Run Text="Only full match (7/7) can be uploaded."/>
+            		<LineBreak/>
+                    <LineBreak/>
+            		<Run Text="If you want to upload your winning location, press 'locate me' -button when uploading highscore."/>
+            		<LineBreak/>
+            		<Run/>
+                    </TextBlock>
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Win table:" Grid.Row="0"></TextBlock>
+                        <TextBlock Text="3+1" Grid.Row="1" Grid.Column="0"></TextBlock>
+                        <TextBlock Text="3+2" Grid.Row="2" Grid.Column="0"></TextBlock>
+                        <TextBlock Text="4+0" Grid.Row="3" Grid.Column="0"></TextBlock>
+                        <TextBlock Text="4+1" Grid.Row="4" Grid.Column="0"></TextBlock>
+                        <TextBlock Text="4+2" Grid.Row="5" Grid.Column="0"></TextBlock>
+                        <TextBlock Text="5+0" Grid.Row="6" Grid.Column="0"></TextBlock>
+                        <TextBlock Text="5+1" Grid.Row="7" Grid.Column="0"></TextBlock>
+                        <TextBlock Text="5+2" Grid.Row="8" Grid.Column="0"></TextBlock>
+                        <TextBlock Text="6+0" Grid.Row="9" Grid.Column="0"></TextBlock>
+                        <TextBlock Text="6+1" Grid.Row="10" Grid.Column="0"></TextBlock>
+                        <TextBlock Text="6+2" Grid.Row="11" Grid.Column="0"></TextBlock>
+                        <TextBlock Text="7" Grid.Row="12" Grid.Column="0"></TextBlock>
+                        <TextBlock Text="2€" Grid.Row="1" Grid.Column="1"></TextBlock>
+                        <TextBlock Text="9€" Grid.Row="2" Grid.Column="1"></TextBlock>
+                        <TextBlock Text="15€" Grid.Row="3" Grid.Column="1"></TextBlock>
+                        <TextBlock Text="150€" Grid.Row="4" Grid.Column="1"></TextBlock>
+                        <TextBlock Text="250€" Grid.Row="5" Grid.Column="1"></TextBlock>
+                        <TextBlock Text="10 000€" Grid.Row="6" Grid.Column="1"></TextBlock>
+                        <TextBlock Text="50 000€" Grid.Row="7" Grid.Column="1"></TextBlock>
+                        <TextBlock Text="350 000€" Grid.Row="8" Grid.Column="1"></TextBlock>
+                        <TextBlock Text="1 000 000€" Grid.Row="9" Grid.Column="1"></TextBlock>
+                        <TextBlock Text="5 000 000€" Grid.Row="10" Grid.Column="1"></TextBlock>
+                        <TextBlock Text="20 000 000€" Grid.Row="11" Grid.Column="1"></TextBlock>
+                        <TextBlock Text="90 000 000€" Grid.Row="12" Grid.Column="1"></TextBlock>
+                    </Grid>
+                </Grid>
             </phone:PivotItem>
         </phone:Pivot>
     </Grid>

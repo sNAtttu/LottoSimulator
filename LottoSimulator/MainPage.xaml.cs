@@ -101,7 +101,26 @@ namespace LottoSimulator
             LotteryResults.Text = "You had " + results[0] + " numbers correct and " + results[1] + " extra number.";
             if (results[0] == 7)
             {
+                LargestHit = tempHit;
+                LargestHitExtras = tempExtra;
+                largestHitSoFar.Text = LargestHit.ToString();
+                highestLotto.OneBall = lotto.OneBall;
+                highestLotto.TwoBall = lotto.TwoBall;
+                highestLotto.ThreeBall = lotto.ThreeBall;
+                highestLotto.FourBall = lotto.FourBall;
+                highestLotto.FiveBall = lotto.FiveBall;
+                highestLotto.SixBall = lotto.SixBall;
+                highestLotto.SevenBall = lotto.SevenBall;
+                highestLotto.ExtraOne = lotto.ExtraOne;
+                highestLotto.ExtraTwo = lotto.ExtraTwo;
                 JackpotCounter++;
+                EuroCounter++;
+                EuroCounterText.Text = EuroCounter.ToString() + " Euros.";
+                JackPotText.Text = JackpotCounter.ToString() + " times.";
+                string jplargestHitText = LargestHit.ToString() + " + " + LargestHitExtras.ToString();
+                largestHitSoFar.Text = jplargestHitText;
+                HighestRowText.Text = highestLotto.ToString() + " + " + highestLotto.ExtraOne + " " + highestLotto.ExtraTwo;
+                uploadHighscore.IsEnabled = true;
             }
             else
             {
@@ -188,6 +207,7 @@ namespace LottoSimulator
         {
             try
             {
+                LotteryResults.Text = "";
                 JackpotStatusBox.Text = "Lottery for 7/7 is on!";
                 PlayUntilWin.IsEnabled = false;
                 List<string> data = await ProcessAsyncData();
@@ -203,10 +223,10 @@ namespace LottoSimulator
         {
             JackpotStatusBox.Text = "";
             EuroCounterText.Text = EuroCounter.ToString() + " Euros.";
-            JackPotText.Text = JackpotCounter.ToString() + " times.";
             if (!cancelJackpot)
             {
                 JackpotStatusBox.Text = "Below you can see how many Euros it will take to get 7/7.";
+                uploadHighscore.IsEnabled = true;
                 JackpotCounter++;
             }
             else
@@ -220,6 +240,7 @@ namespace LottoSimulator
             largestHitSoFar.Text = largestHitText;
             ResultNumbers.Text = lotto.ToString() + " + " + lotto.ExtraOne + " " + lotto.ExtraTwo;
             HighestRowText.Text = highestLotto.ToString() + " + " + highestLotto.ExtraOne + " " + highestLotto.ExtraTwo;
+            JackPotText.Text = JackpotCounter.ToString() + " times.";
         }
 
         async Task<List<string>> ProcessAsyncData()
@@ -245,7 +266,7 @@ namespace LottoSimulator
                     results = machine.checkWinnings(playerLotto, lotto);
                     tempHit = results[0];
                     tempExtra = results[1];
-                    if (tempHit != 7)
+                    if (tempHit != 4)
                     {
                         if (tempHit > LargestHit)
                         {
@@ -277,6 +298,15 @@ namespace LottoSimulator
                     }
                     else
                     {
+                        highestLotto.OneBall = lotto.OneBall;
+                        highestLotto.TwoBall = lotto.TwoBall;
+                        highestLotto.ThreeBall = lotto.ThreeBall;
+                        highestLotto.FourBall = lotto.FourBall;
+                        highestLotto.FiveBall = lotto.FiveBall;
+                        highestLotto.SixBall = lotto.SixBall;
+                        highestLotto.SevenBall = lotto.SevenBall;
+                        highestLotto.ExtraOne = lotto.ExtraOne;
+                        highestLotto.ExtraTwo = lotto.ExtraTwo;
                         LargestHit = tempHit;
                         LargestHitExtras = tempExtra;
                         jackpot = true;
