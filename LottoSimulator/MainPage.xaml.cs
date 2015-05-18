@@ -98,7 +98,8 @@ namespace LottoSimulator
             results = machine.checkWinnings(playerLotto, lotto);
             int tempHit = results[0];
             int tempExtra = results[1];
-            LotteryResults.Text = "You had " + results[0] + " numbers correct and " + results[1] + " extra number.";
+            int winSum = machine.GetWinnings(tempHit, tempExtra);
+            LotteryResults.Text = "You had " + results[0] + " numbers correct and " + results[1] + " extra number. And you won "+winSum+" euros!";
             if (results[0] == 7)
             {
                 LargestHit = tempHit;
@@ -114,7 +115,6 @@ namespace LottoSimulator
                 highestLotto.ExtraOne = lotto.ExtraOne;
                 highestLotto.ExtraTwo = lotto.ExtraTwo;
                 JackpotCounter++;
-                EuroCounter++;
                 JackpotStatusBox.Text = "Below you can see how many Euros it will take to get 7/7.";
                 EuroCounterText.Text = EuroCounter.ToString() + " Euros.";
                 JackPotText.Text = JackpotCounter.ToString() + " times.";
@@ -156,6 +156,7 @@ namespace LottoSimulator
                 }
             }
             EuroCounter++;
+            EuroCounter = EuroCounter - winSum;
             EuroCounterText.Text = EuroCounter.ToString() + " Euros.";
             JackPotText.Text = JackpotCounter.ToString() + " times.";
             string largestHitText = LargestHit.ToString() + " + " + LargestHitExtras.ToString();
@@ -259,7 +260,6 @@ namespace LottoSimulator
                     {
                         break;
                     }
-                    EuroCounter++;
                     lotto = machine.GenerateNumbers(lotto);
                     int[] results = new int[2];
                     int tempHit = 0;
@@ -267,8 +267,11 @@ namespace LottoSimulator
                     results = machine.checkWinnings(playerLotto, lotto);
                     tempHit = results[0];
                     tempExtra = results[1];
+                    EuroCounter++;
                     if (tempHit != 7)
                     {
+                        int winSum = machine.GetWinnings(tempHit, tempExtra);
+                        EuroCounter = EuroCounter - winSum;
                         if (tempHit > LargestHit)
                         {
                             LargestHit = tempHit;
@@ -299,6 +302,8 @@ namespace LottoSimulator
                     }
                     else
                     {
+                        int winSum = machine.GetWinnings(tempHit, tempExtra);
+                        EuroCounter = EuroCounter - winSum;
                         highestLotto.OneBall = lotto.OneBall;
                         highestLotto.TwoBall = lotto.TwoBall;
                         highestLotto.ThreeBall = lotto.ThreeBall;
@@ -313,7 +318,6 @@ namespace LottoSimulator
                         jackpot = true;
                         result.Add(EuroCounter.ToString());
                     }
-                    
                 }
                 return result;
             });

@@ -96,5 +96,47 @@ namespace LottoSimulator.Engine
             return winHits;
         }
 
+        public int GetWinnings(int hits, int extraHits)
+        {
+            int sum = 0;
+
+            switch (hits)
+            {
+                case 3:
+                    if (extraHits == 1)
+                        sum = 2;
+                    if (extraHits == 2)
+                        sum = 5;
+                    break;
+                case 4:
+                    sum = 10;
+                    if (extraHits == 1)
+                        sum = 15;
+                    if (extraHits == 2)
+                        sum = 20;
+                    break;
+                case 5:
+                    sum = 50;
+                    if (extraHits == 1)
+                        sum = 100;
+                    if (extraHits == 2)
+                        sum = 150;
+                    break;
+                case 6:
+                    sum = 2000;
+                    if (extraHits == 1)
+                        sum = 5000;
+                    if (extraHits == 2)
+                        sum = 50000;
+                    break;
+                case 7:
+                    sum = 5000000;
+                    break;
+
+            }
+
+            return sum;
+        }
+
     }
 }
