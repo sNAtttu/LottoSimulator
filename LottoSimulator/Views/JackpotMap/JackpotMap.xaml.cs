@@ -43,7 +43,7 @@ namespace LottoSimulator.Views.JackpotMap
             ShowLottoLocation();
         }
         private async void ShowLottoLocation()
-        {       
+        {
             highscores = await highscoreTable.ToCollectionAsync();
             MapOfLuckList.ItemsSource = highscores;
         }
@@ -56,7 +56,7 @@ namespace LottoSimulator.Views.JackpotMap
                 GeoCoordinate selectedLottoLocation = new GeoCoordinate { Longitude = selectedLotto.longitude, Latitude = selectedLotto.latitude };
                 pin.GeoCoordinate = selectedLottoLocation;
                 mapOfLuck.Center = selectedLottoLocation;
-                mapOfLuck.ZoomLevel = 7;
+                mapOfLuck.ZoomLevel = 12;
             }      
         }
     }

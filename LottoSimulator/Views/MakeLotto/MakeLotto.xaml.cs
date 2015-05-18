@@ -87,7 +87,7 @@ namespace LottoSimulator.Views.MakeLotto
 
             // Set where the popup will show up on the screen.
             p.VerticalOffset = 150;
-            p.HorizontalOffset = 75;
+            p.HorizontalOffset = 30;
 
             // Open the popup.
             p.IsOpen = true;
