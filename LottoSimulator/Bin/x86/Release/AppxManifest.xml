@@ -11,8 +11,8 @@
   <mp:PhoneIdentity PhoneProductId="87757e92-563a-4e40-a318-903fd72a78ff" PhonePublisherId="ac8f8aac-2083-41c7-9657-a11276b79976" />
   <Properties>
     <DisplayName>LottoSimulator</DisplayName>
-    <PublisherDisplayName>santeri.nousiainen</PublisherDisplayName>
-    <Logo>Assets\StoreLogo.png</Logo>
+    <PublisherDisplayName>Sane Software</PublisherDisplayName>
+    <Logo>Assets\ApplicationIcon.png</Logo>
   </Properties>
   <Prerequisites>
     <OSMinVersion>6.3.1</OSMinVersion>
@@ -23,20 +23,23 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="AGHost.exe" EntryPoint="MainPage.xaml">
-      <m3:VisualElements DisplayName="LottoSimulator" Square150x150Logo="Assets\SquareTile150x150.png" Square44x44Logo="Assets\Logo.png" Description="LottoSimulator" ForegroundText="light" BackgroundColor="#464646">
-        <m3:DefaultTile Square71x71Logo="Assets\SquareTile71x71.png" />
-        <m3:SplashScreen Image="Assets\SplashScreen.png" />
+      <m3:VisualElements DisplayName="LottoSimulator" Square150x150Logo="Assets\ApplicationIcon.png" Square44x44Logo="Assets\ApplicationIcon.png" Description="LottoSimulator" ForegroundText="light" BackgroundColor="#464646">
+        <m3:DefaultTile Square71x71Logo="Assets\ApplicationIcon.png"></m3:DefaultTile>
+        <m3:SplashScreen Image="Assets\ApplicationIcon.png" />
       </m3:VisualElements>
       <Extensions>
         <Extension Category="windows.backgroundTasks" EntryPoint="AgHost.BackgroundTask">
           <BackgroundTasks>
             <Task Type="systemEvent" />
+            <m2:Task Type="location" />
           </BackgroundTasks>
         </Extension>
       </Extensions>
     </Application>
   </Applications>
-  <Capabilities></Capabilities>
+  <Capabilities>
+    <DeviceCapability Name="location" />
+  </Capabilities>
   <Extensions>
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
@@ -52,6 +55,6 @@
     <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.31101.0" />
     <build:Item Name="ProjectGUID" Value="{87757E92-563A-4E40-A318-903FD72A78FF}" />
-    <build:Item Name="MakePri.exe" Version="6.3.9600.17298 (winblue.141024-1500)" />
+    <build:Item Name="MakePri.exe" Version="6.3.9600.17336 (winblue.150226-1500)" />
   </build:Metadata>
 </Package>

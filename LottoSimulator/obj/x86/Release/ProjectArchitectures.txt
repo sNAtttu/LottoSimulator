@@ -1,1 +1,1 @@
-C:\Users\Santeri\Documents\Visual Studio 2013\Projects\LottoSimulator\LottoSimulator\LottoSimulator\LottoSimulator.csproj;x86
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\LottoSimulator.csproj;x86

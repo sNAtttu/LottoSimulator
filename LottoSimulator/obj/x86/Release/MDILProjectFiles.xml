@@ -5,20 +5,17 @@
     <File>LottoSimulator.dll</File>
     <File>fi-FI\LottoSimulator.resources.dll</File>
     <File>fi\LottoSimulator.resources.dll</File>
-    <File>Assets\AlignmentGrid.png</File>
-    <File>Assets\BadgeLogo.png</File>
-    <File>Assets\Logo.png</File>
-    <File>Assets\SplashScreen.png</File>
-    <File>Assets\SquareTile150x150.png</File>
-    <File>Assets\SquareTile71x71.png</File>
-    <File>Assets\StoreLogo.png</File>
-    <File>Assets\WideLogo.png</File>
+    <File>Assets\add.png</File>
+    <File>Assets\cancel.png</File>
+    <File>Assets\check.png</File>
+    <File>Assets\Map_pin1.png</File>
+    <File>Assets\questionmark.png</File>
+    <File>Assets\refresh.png</File>
     <File>Assets\Tiles\FlipCycleTileLarge.png</File>
     <File>Assets\Tiles\FlipCycleTileSmall.png</File>
     <File>Assets\Tiles\IconicTileMediumLarge.png</File>
     <File>Assets\Tiles\IconicTileSmall.png</File>
     <File>AppManifest.xaml</File>
-    <File>Assets\ApplicationIcon.png</File>
     <File>Assets\Tiles\FlipCycleTileMedium.png</File>
     <File>Microsoft.Phone.Controls.dll</File>
     <File Type="PCL">Microsoft.WindowsAzure.Mobile.dll</File>
@@ -35,6 +32,7 @@
     <File>System.Net.Http.xml</File>
     <File>System.Net.Http.Extensions.xml</File>
     <File>System.Net.Http.Primitives.xml</File>
+    <File>Assets\ApplicationIcon.png</File>
     <File>WMAppManifest.xml</File>
     <File>AppxManifest.xml</File>
   </XAPFiles>

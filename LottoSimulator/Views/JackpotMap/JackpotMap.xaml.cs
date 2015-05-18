@@ -59,5 +59,11 @@ namespace LottoSimulator.Views.JackpotMap
                 mapOfLuck.ZoomLevel = 12;
             }      
         }
+
+        private void MapOfLuck_Loaded(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Phone.Maps.MapsSettings.ApplicationContext.ApplicationId = "312a68e5-5e45-4709-9dfd-0fe3ead64c89";
+            Microsoft.Phone.Maps.MapsSettings.ApplicationContext.AuthenticationToken = "nK0f20YGiCL2n5MRRRue0g";
+        }
     }
 }
