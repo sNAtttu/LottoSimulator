@@ -167,6 +167,7 @@
     <Content Include="Assets\cancel.png" />
     <Content Include="Assets\check.png" />
     <Content Include="Assets\Map_pin1.png" />
+    <Content Include="Assets\questionmark.png" />
     <Content Include="Assets\refresh.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

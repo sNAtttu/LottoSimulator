@@ -18,15 +18,15 @@
         <!--Pivot Control-->
         <phone:Pivot Title="Lottery Simulator">
             <!--Pivot item one-->
-            <phone:PivotItem Header="Directions">
+            <phone:PivotItem Header="Instructions">
                 <TextBlock HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="583" Width="446">
-                	<Run Text="1. Press '+' button to make a lottery row. One row costs 1€."/>
+                	<Run Text="1. Press '+' button to make a lottery row."/>
                 	<LineBreak/>
-                	<Run Text="2. Choose seven numbers for your row. "/>
+                	<Run Text="2. Choose seven numbers for your row."/>
                 	<LineBreak/>
-                	<Run Text="3. You will return to main page. Now press Lottery or Play until 7/7."/>
+                	<Run Text="3. Now press 'Lottery'-Button or 'Make me a winner!'-Button."/>
                 	<LineBreak/>
-                	<Run Text="4. After first Lottery you can see results in screen. If you pressed Play until 7/7 press 'refresh'-button on appbar in main page to see your current cost and played rows."/>
+                	<Run Text="4. If you pressed 'Make me a winner' press 'refresh'-button on appbar in main page to see your current cost and played rows."/>
                 	<LineBreak/>
                     <LineBreak/>
                     <Run Text="Warning: Play until 7/7 can take a lot of time, depending on your luck."></Run>

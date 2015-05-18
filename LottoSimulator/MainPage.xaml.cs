@@ -30,6 +30,8 @@ namespace LottoSimulator
         TextBox playerNameTextBox;
         Button locationButton;
 
+        private bool enableButtons = false;
+
         private long euroCounter = 0;
         private int jackpotCounter = 0;
         private int largestHit = 0;
@@ -123,8 +125,20 @@ namespace LottoSimulator
             string[] tempArray = new string[7];
             string lottoNumbers = "";
 
+            if (enableButtons == false)
+            {
+                LotteryResults.Text = "Before you can start, you must make a lottery row! Press '+' or '?' on appbar.";
+            }
+
             if (NavigationContext.QueryString.TryGetValue("numbers", out lottoNumbers))
             {
+                if (enableButtons == false)
+                {
+                    enableButtons = true;
+                    PlayButton.IsEnabled = true;
+                    PlayUntilWin.IsEnabled = true;
+                }
+
                 tempArray = lottoNumbers.Split(' ');
 
                 for (int i = 0; i < 7; i++)
@@ -132,6 +146,7 @@ namespace LottoSimulator
                     tempNumbers[i] = int.Parse(tempArray[i]);
                 }
             }
+
 
             playerLotto.OneBall = tempNumbers[0];
             playerLotto.TwoBall = tempNumbers[1];
@@ -189,13 +204,14 @@ namespace LottoSimulator
             {
                 
                 List<string> result = new List<string>();
+
                 while (!jackpot)
                 {
                     if (cancelJackpot)
                     {
                         break;
                     }
-                    EuroCounter++;                  
+                    EuroCounter++;
                     lotto = machine.GenerateNumbers(lotto);
                     int[] results = new int[2];
                     int tempHit = 0;
@@ -366,5 +382,6 @@ namespace LottoSimulator
         {
             NavigationService.Navigate(new Uri("/Views/MakeLotto/MakeLotto.xaml", UriKind.Relative));
         }
+
     }
 }

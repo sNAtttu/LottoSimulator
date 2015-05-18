@@ -29,7 +29,7 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="14,0,10,0">
             <TextBlock x:Name="HeaderBlock" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Winning row:" VerticalAlignment="Top" FontSize="24"/>
             <TextBlock x:Name="ResultNumbers" HorizontalAlignment="Left" Margin="187,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
-            <Button x:Name="PlayButton" Content="Lottery" HorizontalAlignment="Right" Margin="0,0,10,83" VerticalAlignment="Bottom" Width="202" Click="PlayButton_Click"/>
+            <Button x:Name="PlayButton" Content="Lottery" HorizontalAlignment="Right" Margin="0,0,10,83" VerticalAlignment="Bottom" Width="202" Click="PlayButton_Click" IsEnabled="False"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" FontSize="24" Text="Your row:
 "/>
             <TextBlock x:Name="playerNumbers" HorizontalAlignment="Left" Margin="187,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
@@ -38,7 +38,7 @@
             <TextBlock x:Name="EuroCounterText" HorizontalAlignment="Left" Margin="187,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-1.15,0.574" Text="0 Euros."/>
             <TextBlock HorizontalAlignment="Left" Margin="10,248,0,0" TextWrapping="Wrap" Text="7/7 matches:" VerticalAlignment="Top"/>
             <TextBlock x:Name="JackPotText" HorizontalAlignment="Left" Margin="187,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0 times."/>
-            <Button x:Name="PlayUntilWin" Content="Play until 7/7!" HorizontalAlignment="Center" Margin="0,0,212,83" VerticalAlignment="Bottom" Width="244" Click="PlayUntilWin_Click"/>
+            <Button x:Name="PlayUntilWin" Content="Make me a winner!" HorizontalAlignment="Center" Margin="0,0,212,83" VerticalAlignment="Bottom" Width="244" Click="PlayUntilWin_Click" IsEnabled="False"/>
             <TextBlock x:Name="JackpotStatusBox" HorizontalAlignment="Left" Margin="10,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,280,0,0" TextWrapping="Wrap" Text="Best match:" VerticalAlignment="Top"/>
             <TextBlock x:Name="largestHitSoFar" HorizontalAlignment="Left" Margin="187,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0" RenderTransformOrigin="0.517,0.5"/>
@@ -61,10 +61,10 @@
             <shell:ApplicationBarIconButton IconUri="/Assets/add.png" Text="New" Click="ApplicationBarIconButton_Click_3"/>
             <shell:ApplicationBarIconButton IconUri="/Assets/refresh.png" Text="Refresh" Click="ApplicationBarIconButton_Click_2"/>
             <shell:ApplicationBarIconButton IconUri="/Assets/cancel.png" Text="Stop" Click="ApplicationBarIconButton_Click"/>
-            <shell:ApplicationBarIconButton IconUri="/Assets/check.png" Text="Reset" Click="ApplicationBarIconButton_Click_1"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/questionmark.png" Text="help" Click="HelpMenu_Click"/>
             <shell:ApplicationBar.MenuItems>
                 <shell:ApplicationBarMenuItem  Click="JackPotMenu_Click" Text="Jackpots"/>
-                <shell:ApplicationBarMenuItem Click="HelpMenu_Click" Text="Help"/>
+                <shell:ApplicationBarMenuItem Click="ApplicationBarIconButton_Click_1" Text="Reset"/>
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
