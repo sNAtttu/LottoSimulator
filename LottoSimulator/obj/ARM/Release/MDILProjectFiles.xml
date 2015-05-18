@@ -3,8 +3,6 @@
   <XAPFiles>
     <File>resources.pri</File>
     <File>LottoSimulator.dll</File>
-    <File>fi-FI\LottoSimulator.resources.dll</File>
-    <File>fi\LottoSimulator.resources.dll</File>
     <File>Assets\add.png</File>
     <File>Assets\cancel.png</File>
     <File>Assets\check.png</File>
