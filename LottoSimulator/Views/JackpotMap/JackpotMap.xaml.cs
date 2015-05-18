@@ -53,7 +53,7 @@ namespace LottoSimulator.Views.JackpotMap
             if(MapOfLuckList != null && MapOfLuckList.SelectedItem != null)
             {
                 var selectedLotto = (Lotto)MapOfLuckList.SelectedItem;
-                GeoCoordinate selectedLottoLocation = new GeoCoordinate { Longitude = selectedLotto.longtitude, Latitude = selectedLotto.latitude };
+                GeoCoordinate selectedLottoLocation = new GeoCoordinate { Longitude = selectedLotto.longitude, Latitude = selectedLotto.latitude };
                 pin.GeoCoordinate = selectedLottoLocation;
                 mapOfLuck.Center = selectedLottoLocation;
                 mapOfLuck.ZoomLevel = 7;

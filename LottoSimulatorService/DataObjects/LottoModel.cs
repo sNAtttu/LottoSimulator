@@ -10,7 +10,7 @@ namespace LottoSimulatorService.DataObjects
 
         public string playerName { get; set; }
 
-       public double longitude { get; set; }
+        public double longitude { get; set; }
 
         public double latitude { get; set; }
     }

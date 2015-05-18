@@ -10,7 +10,6 @@ namespace LottoSimulator.Engine
 {
     class LottoMachine
     {
-
         public LottoModel GenerateNumbers(LottoModel lotto)
         {
             Random rng = new Random();
@@ -134,9 +133,7 @@ namespace LottoSimulator.Engine
                     break;
 
             }
-
             return sum;
         }
-
     }
 }

@@ -43,12 +43,12 @@ namespace LottoSimulator
             set { largestHitExtras = value; }
         }
 
-        private double tempLongtitude;
+        private double tempLongitude;
 
-        public double TempLongtitude
+        public double TempLongitude
         {
-            get { return tempLongtitude; }
-            set { tempLongtitude = value; }
+            get { return tempLongitude; }
+            set { tempLongitude = value; }
         }
         private double tempLatitude;
 
@@ -100,7 +100,7 @@ namespace LottoSimulator
             int tempExtra = results[1];
             int winSum = machine.GetWinnings(tempHit, tempExtra);
             LotteryResults.Text = "You had " + results[0] + " numbers correct and " + results[1] + " extra number. And you won "+winSum+" euros!";
-            if (results[0] == 7)
+            if (results[0] == 2)
             {
                 LargestHit = tempHit;
                 LargestHitExtras = tempExtra;
@@ -392,7 +392,7 @@ namespace LottoSimulator
                     Cost = EuroCounter, 
                     playerName = playerNameTextBox.Text,
                     latitude = TempLatitude,
-                    longtitude = TempLongtitude
+                    longitude = TempLongitude
                 };
                 await App.MobileService.GetTable<Lotto>().InsertAsync(highScore);
                 highscorePopup.IsOpen = false;
@@ -421,7 +421,7 @@ namespace LottoSimulator
                 Geoposition myGeoposition = await myGeolocator.GetGeopositionAsync();
                 Geocoordinate myGeocoordinate = myGeoposition.Coordinate;
                 tempLatitude = myGeocoordinate.Point.Position.Latitude;
-                tempLongtitude = myGeocoordinate.Point.Position.Longitude;
+                tempLongitude = myGeocoordinate.Point.Position.Longitude;
                 locationButton.IsEnabled = true;
             }
             catch (Exception ex)
