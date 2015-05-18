@@ -109,7 +109,7 @@ namespace LottoSimulator
             int tempExtra = results[1];
             int winSum = machine.GetWinnings(tempHit, tempExtra);
             LotteryResults.Text = "You had " + results[0] + " numbers correct and " + results[1] + " extra number. And you won "+winSum+" euros!";
-            if (results[0] == 2)
+            if (results[0] == 7)
             {
                 LargestHit = tempHit;
                 LargestHitExtras = tempExtra;
@@ -365,7 +365,7 @@ namespace LottoSimulator
                 textblock1.Margin = new Thickness(5.0);
                 playerNameTextBox = new TextBox();
                 playerNameTextBox.Margin = new Thickness(5.0);
-                playerNameTextBox.Width = 200;
+                playerNameTextBox.Width = 250;
                 panel1.Children.Add(textblock1);
                 panel1.Children.Add(playerNameTextBox);
                 panel1.Children.Add(locationButton);

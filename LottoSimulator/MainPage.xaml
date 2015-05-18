@@ -44,7 +44,7 @@
             <TextBlock x:Name="largestHitSoFar" HorizontalAlignment="Left" Margin="187,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0" RenderTransformOrigin="0.517,0.5" Width="69"/>
             <TextBlock x:Name="winrow" HorizontalAlignment="Left" Margin="10,312,0,0" TextWrapping="Wrap" Text="Best winning row:" VerticalAlignment="Top"/>
             <TextBlock x:Name="HighestRowText" HorizontalAlignment="Left" Margin="187,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0" Width="244"/>
-            <Button x:Name="uploadHighscore" IsEnabled="False" Content="Save full hit!" HorizontalAlignment="Left" Margin="-5,520,0,0" VerticalAlignment="Top" Width="451" Click="uploadHighscore_Click"/>
+            <Button x:Name="uploadHighscore" Content="Save full hit!" HorizontalAlignment="Left" Margin="-5,520,0,0" VerticalAlignment="Top" Width="451" Click="uploadHighscore_Click" IsEnabled="False"/>
             <TextBlock HorizontalAlignment="Left" Margin="261,280,0,0" TextWrapping="Wrap" Text="/ 7 right." VerticalAlignment="Top"/>
             <TextBlock Text="Total rows played: " HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,232"></TextBlock>
             <TextBlock x:Name="RowCountTextBlock" HorizontalAlignment="Left" Margin="187,344,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
@@ -65,7 +65,7 @@
             <shell:ApplicationBarIconButton IconUri="/Assets/cancel.png" Text="Stop" Click="ApplicationBarIconButton_Click"/>
             <shell:ApplicationBarIconButton IconUri="/Assets/questionmark.png" Text="help" Click="HelpMenu_Click"/>
             <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem  Click="JackPotMenu_Click" Text="Jackpots"/>
+                <shell:ApplicationBarMenuItem Click="JackPotMenu_Click" Text="Highscores"/>
                 <shell:ApplicationBarMenuItem Click="ApplicationBarIconButton_Click_1" Text="Reset"/>
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
