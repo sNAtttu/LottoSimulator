@@ -11,7 +11,7 @@
   <mp:PhoneIdentity PhoneProductId="87757e92-563a-4e40-a318-903fd72a78ff" PhonePublisherId="ac8f8aac-2083-41c7-9657-a11276b79976" />
   <Properties>
     <DisplayName>LottoSimulator</DisplayName>
-    <PublisherDisplayName>santeri.nousiainen</PublisherDisplayName>
+    <PublisherDisplayName>Sane Software</PublisherDisplayName>
     <Logo>Assets\ApplicationIcon.png</Logo>
   </Properties>
   <Prerequisites>
@@ -24,19 +24,22 @@
   <Applications>
     <Application Id="App" Executable="AGHost.exe" EntryPoint="MainPage.xaml">
       <m3:VisualElements DisplayName="LottoSimulator" Square150x150Logo="Assets\ApplicationIcon.png" Square44x44Logo="Assets\ApplicationIcon.png" Description="LottoSimulator" ForegroundText="light" BackgroundColor="#464646">
-        <m3:DefaultTile Square71x71Logo="Assets\ApplicationIcon.png" />
+        <m3:DefaultTile Square71x71Logo="Assets\ApplicationIcon.png"></m3:DefaultTile>
         <m3:SplashScreen Image="Assets\ApplicationIcon.png" />
       </m3:VisualElements>
       <Extensions>
         <Extension Category="windows.backgroundTasks" EntryPoint="AgHost.BackgroundTask">
           <BackgroundTasks>
             <Task Type="systemEvent" />
+            <m2:Task Type="location" />
           </BackgroundTasks>
         </Extension>
       </Extensions>
     </Application>
   </Applications>
-  <Capabilities></Capabilities>
+  <Capabilities>
+    <DeviceCapability Name="location" />
+  </Capabilities>
   <Extensions>
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
