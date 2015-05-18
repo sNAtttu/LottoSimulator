@@ -46,6 +46,8 @@
             <TextBlock x:Name="HighestRowText" HorizontalAlignment="Left" Margin="187,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0" Width="244"/>
             <Button x:Name="uploadHighscore" IsEnabled="False" Content="Save full hit!" HorizontalAlignment="Left" Margin="-5,520,0,0" VerticalAlignment="Top" Width="451" Click="uploadHighscore_Click"/>
             <TextBlock HorizontalAlignment="Left" Margin="261,280,0,0" TextWrapping="Wrap" Text="/ 7 right." VerticalAlignment="Top"/>
+            <TextBlock Text="Total rows played: " HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,232"></TextBlock>
+            <TextBlock x:Name="RowCountTextBlock" HorizontalAlignment="Left" Margin="187,344,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
         </Grid>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are

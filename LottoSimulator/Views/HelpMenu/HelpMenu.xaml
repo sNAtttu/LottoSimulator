@@ -24,15 +24,17 @@
                 	<LineBreak/>
                 	<Run Text="2. Choose seven numbers for your row."/>
                 	<LineBreak/>
-                	<Run Text="3. Now press 'Lottery'-Button or 'Make me a winner!'-Button."/>
+                	<Run Text="3. Now press 'Lottery' or 'Make me a winner!'-Button."/>
                 	<LineBreak/>
-                	<Run Text="4. If you pressed 'Make me a winner' press 'refresh'-button on appbar in main page to see your current cost and played rows. If you want to stop, press 'stop'-button."/>
-                	<LineBreak/>
-                    <LineBreak/>
-                	<Run Text="After you hit 7/7 (if you are that lucky) the 'save full hit'-button will be enabled for you to upload highscore. If you want to upload location, press 'locate me' before 'OK'."/>
+                	<Run Text="4. If you pressed 'Make me a winner' you can refresh row and euro counters from appbar in main page to see your current cost and played rows."/>
                 	<LineBreak/>
                     <LineBreak/>
-                    <Run Text="Highscores can be viewed from 'Highscores'-menu. You can also view winning locations by pressing 'maps'-button."></Run>
+                	<Run Text="After full hit (if you are that lucky) the 'save full hit'-button will be enabled for you to upload highscore."></Run>
+                    <LineBreak/>
+                    <Run Text="If you want to upload location, press 'locate'-button before confirm."/>
+                	<LineBreak/>
+                    <LineBreak/>
+                    <Run Text="Highscores can be viewed from 'Highscores'-menu. You can also view winning locations."></Run>
                     <Run/>
                 </TextBlock>
             </phone:PivotItem>

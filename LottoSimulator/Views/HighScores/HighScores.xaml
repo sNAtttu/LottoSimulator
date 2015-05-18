@@ -23,7 +23,7 @@
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="Lottery Simulator" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="Jackpots!" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="Highscores" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
@@ -41,11 +41,11 @@
                                     <ColumnDefinition Width="30*" />
                                     <ColumnDefinition Width="30*" />
                                 </Grid.ColumnDefinitions>
-                                <TextBlock Text="Pelaaja:   " Grid.Column="0" FontSize="14"></TextBlock>
+                                <TextBlock Text="Player:   " Grid.Column="0" FontSize="14"></TextBlock>
                                 <TextBlock Text="{Binding playerName}" Grid.Column="1" FontSize="14"></TextBlock>
-                                <TextBlock Text="   Pelattu rivi: " Grid.Column="2" FontSize="14"></TextBlock>
+                                <TextBlock Text="   Row: " Grid.Column="2" FontSize="14"></TextBlock>
                                 <TextBlock Text="{Binding WinningRow}" Grid.Column="3" FontSize="14"></TextBlock>
-                                <TextBlock Text="   Rivien hinta:   " Grid.Column="4" FontSize="14"></TextBlock>
+                                <TextBlock Text="   Cost(€):   " Grid.Column="4" FontSize="14"></TextBlock>
                                 <TextBlock Text="{Binding Cost}" Grid.Column="5" FontSize="14" ></TextBlock>
                             </Grid>
                         </StackPanel>

@@ -36,6 +36,13 @@ namespace LottoSimulator
         private int jackpotCounter = 0;
         private int largestHit = 0;
         private int largestHitExtras = 0;
+        private int rowCounter = 0;
+
+        public int RowCounter
+        {
+            get { return rowCounter; }
+            set { rowCounter = value; }
+        }
 
         public int LargestHitExtras
         {
@@ -92,6 +99,8 @@ namespace LottoSimulator
 
         private void PlayButton_Click(object sender, RoutedEventArgs e)
         {
+            RowCounter++;
+            RowCountTextBlock.Text = RowCounter.ToString();
             lotto = machine.GenerateNumbers(lotto);
             ResultNumbers.Text = lotto.ToString() + " + " + lotto.ExtraOne + " " + lotto.ExtraTwo;
             int[] results = new int[2];
@@ -243,6 +252,7 @@ namespace LottoSimulator
             ResultNumbers.Text = lotto.ToString() + " + " + lotto.ExtraOne + " " + lotto.ExtraTwo;
             HighestRowText.Text = highestLotto.ToString() + " + " + highestLotto.ExtraOne + " " + highestLotto.ExtraTwo;
             JackPotText.Text = JackpotCounter.ToString() + " times.";
+            RowCountTextBlock.Text = RowCounter.ToString();
         }
 
         async Task<List<string>> ProcessAsyncData()
@@ -256,6 +266,7 @@ namespace LottoSimulator
 
                 while (!jackpot)
                 {
+                    RowCounter++;
                     if (cancelJackpot)
                     {
                         break;
@@ -394,8 +405,8 @@ namespace LottoSimulator
                     latitude = TempLatitude,
                     longitude = TempLongitude
                 };
-                await App.MobileService.GetTable<Lotto>().InsertAsync(highScore);
                 highscorePopup.IsOpen = false;
+                await App.MobileService.GetTable<Lotto>().InsertAsync(highScore);
             }
             catch (Exception ex)
             {
@@ -440,6 +451,9 @@ namespace LottoSimulator
         {
             playerLotto = new LottoModel();
             lotto = new LottoModel();
+            highestLotto = new LottoModel();
+            RowCounter = 0;
+            uploadHighscore.IsEnabled = false;
             EuroCounter = 0;
             playerNumbers.Text = playerLotto.ToString();
             ResultNumbers.Text = lotto.ToString();
@@ -454,6 +468,7 @@ namespace LottoSimulator
         private void ApplicationBarIconButton_Click_2(object sender, EventArgs e)
         {
             EuroCounterText.Text = EuroCounter.ToString() + " Euros.";
+            RowCountTextBlock.Text = RowCounter.ToString();
             string largestHitText = LargestHit.ToString() + " + " + LargestHitExtras.ToString();
             largestHitSoFar.Text = largestHitText;
             ResultNumbers.Text = lotto.ToString() + " + " + lotto.ExtraOne + " " + lotto.ExtraTwo;
