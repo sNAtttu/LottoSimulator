@@ -41,11 +41,11 @@
             <Button x:Name="PlayUntilWin" Content="Make me a winner!" HorizontalAlignment="Center" Margin="0,0,212,83" VerticalAlignment="Bottom" Width="244" Click="PlayUntilWin_Click" IsEnabled="False"/>
             <TextBlock x:Name="JackpotStatusBox" HorizontalAlignment="Left" Margin="10,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,280,0,0" TextWrapping="Wrap" Text="Best match:" VerticalAlignment="Top"/>
-            <TextBlock x:Name="largestHitSoFar" HorizontalAlignment="Left" Margin="187,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0" RenderTransformOrigin="0.517,0.5"/>
+            <TextBlock x:Name="largestHitSoFar" HorizontalAlignment="Left" Margin="187,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0" RenderTransformOrigin="0.517,0.5" Width="69"/>
             <TextBlock x:Name="winrow" HorizontalAlignment="Left" Margin="10,312,0,0" TextWrapping="Wrap" Text="Your best row:" VerticalAlignment="Top"/>
             <TextBlock x:Name="HighestRowText" HorizontalAlignment="Left" Margin="187,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0" Width="244"/>
             <Button x:Name="uploadHighscore" IsEnabled="True" Content="Save full match!" HorizontalAlignment="Left" Margin="-5,520,0,0" VerticalAlignment="Top" Width="451" Click="uploadHighscore_Click"/>
-            <TextBlock HorizontalAlignment="Left" Margin="203,280,0,0" TextWrapping="Wrap" Text="/ 7 right." VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="261,280,0,0" TextWrapping="Wrap" Text="/ 7 right." VerticalAlignment="Top"/>
         </Grid>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are

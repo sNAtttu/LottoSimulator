@@ -35,6 +35,13 @@ namespace LottoSimulator
         private long euroCounter = 0;
         private int jackpotCounter = 0;
         private int largestHit = 0;
+        private int largestHitExtras = 0;
+
+        public int LargestHitExtras
+        {
+            get { return largestHitExtras; }
+            set { largestHitExtras = value; }
+        }
 
         private double tempLongtitude;
 
@@ -90,6 +97,7 @@ namespace LottoSimulator
             int[] results = new int[2];
             results = machine.checkWinnings(playerLotto, lotto);
             int tempHit = results[0];
+            int tempExtra = results[1];
             LotteryResults.Text = "You had " + results[0] + " numbers correct and " + results[1] + " extra number.";
             if (results[0] == 7)
             {
@@ -100,6 +108,21 @@ namespace LottoSimulator
                 if (tempHit > LargestHit)
                 {
                     LargestHit = tempHit;
+                    LargestHitExtras = tempExtra;
+                    largestHitSoFar.Text = LargestHit.ToString();
+                    highestLotto.OneBall = lotto.OneBall;
+                    highestLotto.TwoBall = lotto.TwoBall;
+                    highestLotto.ThreeBall = lotto.ThreeBall;
+                    highestLotto.FourBall = lotto.FourBall;
+                    highestLotto.FiveBall = lotto.FiveBall;
+                    highestLotto.SixBall = lotto.SixBall;
+                    highestLotto.SevenBall = lotto.SevenBall;
+                    highestLotto.ExtraOne = lotto.ExtraOne;
+                    highestLotto.ExtraTwo = lotto.ExtraTwo;
+                }
+                else if (tempHit == LargestHit && tempExtra > LargestHitExtras)
+                {
+                    LargestHitExtras = tempExtra;
                     largestHitSoFar.Text = LargestHit.ToString();
                     highestLotto.OneBall = lotto.OneBall;
                     highestLotto.TwoBall = lotto.TwoBall;
@@ -115,6 +138,8 @@ namespace LottoSimulator
             EuroCounter++;
             EuroCounterText.Text = EuroCounter.ToString() + " Euros.";
             JackPotText.Text = JackpotCounter.ToString() + " times.";
+            string largestHitText = LargestHit.ToString() + " + " + LargestHitExtras.ToString();
+            largestHitSoFar.Text = largestHitText;
             HighestRowText.Text = highestLotto.ToString() + " + " + highestLotto.ExtraOne + " " + highestLotto.ExtraTwo;
         }
 
@@ -191,7 +216,8 @@ namespace LottoSimulator
             }
             PlayUntilWin.IsEnabled = true;
             EuroCounterText.Text = EuroCounter.ToString() + " Euros.";
-            largestHitSoFar.Text = LargestHit.ToString();
+            string largestHitText = LargestHit.ToString() + " + " + LargestHitExtras.ToString();
+            largestHitSoFar.Text = largestHitText;
             ResultNumbers.Text = lotto.ToString() + " + " + lotto.ExtraOne + " " + lotto.ExtraTwo;
             HighestRowText.Text = highestLotto.ToString() + " + " + highestLotto.ExtraOne + " " + highestLotto.ExtraTwo;
         }
@@ -215,13 +241,29 @@ namespace LottoSimulator
                     lotto = machine.GenerateNumbers(lotto);
                     int[] results = new int[2];
                     int tempHit = 0;
+                    int tempExtra = 0;
                     results = machine.checkWinnings(playerLotto, lotto);
                     tempHit = results[0];
+                    tempExtra = results[1];
                     if (tempHit != 7)
                     {
                         if (tempHit > LargestHit)
                         {
                             LargestHit = tempHit;
+                            LargestHitExtras = tempExtra;
+                            highestLotto.OneBall = lotto.OneBall;
+                            highestLotto.TwoBall = lotto.TwoBall;
+                            highestLotto.ThreeBall = lotto.ThreeBall;
+                            highestLotto.FourBall = lotto.FourBall;
+                            highestLotto.FiveBall = lotto.FiveBall;
+                            highestLotto.SixBall = lotto.SixBall;
+                            highestLotto.SevenBall = lotto.SevenBall;
+                            highestLotto.ExtraOne = lotto.ExtraOne;
+                            highestLotto.ExtraTwo = lotto.ExtraTwo;
+                        }
+                        else if (tempHit == LargestHit && tempExtra > LargestHitExtras)
+                        {
+                            LargestHitExtras = tempExtra;
                             highestLotto.OneBall = lotto.OneBall;
                             highestLotto.TwoBall = lotto.TwoBall;
                             highestLotto.ThreeBall = lotto.ThreeBall;
@@ -236,6 +278,7 @@ namespace LottoSimulator
                     else
                     {
                         LargestHit = tempHit;
+                        LargestHitExtras = tempExtra;
                         jackpot = true;
                         result.Add(EuroCounter.ToString());
                     }
@@ -368,12 +411,16 @@ namespace LottoSimulator
             EuroCounterText.Text = EuroCounter.ToString() + " Euros.";
             JackpotCounter = 0;
             JackPotText.Text = JackpotCounter.ToString() + " times.";
+            enableButtons = false;
+            PlayUntilWin.IsEnabled = false;
+            PlayButton.IsEnabled = false;
         }
 
         private void ApplicationBarIconButton_Click_2(object sender, EventArgs e)
         {
             EuroCounterText.Text = EuroCounter.ToString() + " Euros.";
-            largestHitSoFar.Text = LargestHit.ToString();
+            string largestHitText = LargestHit.ToString() + " + " + LargestHitExtras.ToString();
+            largestHitSoFar.Text = largestHitText;
             ResultNumbers.Text = lotto.ToString() + " + " + lotto.ExtraOne + " " + lotto.ExtraTwo;
             HighestRowText.Text = highestLotto.ToString() + " + " + highestLotto.ExtraOne + " " + highestLotto.ExtraTwo;
         }
