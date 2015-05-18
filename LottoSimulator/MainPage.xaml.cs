@@ -115,6 +115,7 @@ namespace LottoSimulator
                 highestLotto.ExtraTwo = lotto.ExtraTwo;
                 JackpotCounter++;
                 EuroCounter++;
+                JackpotStatusBox.Text = "Below you can see how many Euros it will take to get 7/7.";
                 EuroCounterText.Text = EuroCounter.ToString() + " Euros.";
                 JackPotText.Text = JackpotCounter.ToString() + " times.";
                 string jplargestHitText = LargestHit.ToString() + " + " + LargestHitExtras.ToString();
@@ -266,7 +267,7 @@ namespace LottoSimulator
                     results = machine.checkWinnings(playerLotto, lotto);
                     tempHit = results[0];
                     tempExtra = results[1];
-                    if (tempHit != 4)
+                    if (tempHit != 7)
                     {
                         if (tempHit > LargestHit)
                         {
