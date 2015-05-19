@@ -9,7 +9,5 @@
     <AssemblyPart x:Name="System.Net.Http" Source="System.Net.Http.dll" />
     <AssemblyPart x:Name="System.Net.Http.Extensions" Source="System.Net.Http.Extensions.dll" />
     <AssemblyPart x:Name="System.Net.Http.Primitives" Source="System.Net.Http.Primitives.dll" />
-    <AssemblyPart Source="fi-FI/LottoSimulator.resources.dll" />
-    <AssemblyPart Source="fi/LottoSimulator.resources.dll" />
   </Deployment.Parts>
 </Deployment>

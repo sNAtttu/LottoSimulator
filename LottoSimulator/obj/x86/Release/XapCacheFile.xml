@@ -1,8 +1,6 @@
-﻿<xapCache source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\LottoSimulator_Release_x86.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="19.5.2015 0:59:25">
-  <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\resources.pri" archivePath="resources.pri" lastWriteTime="19.5.2015 0:53:32" />
-  <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\LottoSimulator.dll" archivePath="LottoSimulator.dll" lastWriteTime="19.5.2015 0:59:23" />
-  <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\fi-FI\LottoSimulator.resources.dll" archivePath="fi-FI\LottoSimulator.resources.dll" lastWriteTime="19.5.2015 0:59:24" />
-  <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\fi\LottoSimulator.resources.dll" archivePath="fi\LottoSimulator.resources.dll" lastWriteTime="19.5.2015 0:59:24" />
+﻿<xapCache source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\LottoSimulator_Release_x86.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="19.5.2015 20:50:28">
+  <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\resources.pri" archivePath="resources.pri" lastWriteTime="19.5.2015 20:50:27" />
+  <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\LottoSimulator.dll" archivePath="LottoSimulator.dll" lastWriteTime="19.5.2015 20:50:26" />
   <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\add.png" archivePath="Assets\add.png" lastWriteTime="17.5.2015 21:08:34" />
   <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\cancel.png" archivePath="Assets\cancel.png" lastWriteTime="17.5.2015 21:08:34" />
   <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\check.png" archivePath="Assets\check.png" lastWriteTime="17.5.2015 21:08:34" />
@@ -13,7 +11,7 @@
   <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="17.5.2015 21:08:34" />
   <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="17.5.2015 21:08:34" />
   <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="17.5.2015 21:08:34" />
-  <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="19.5.2015 0:53:33" />
+  <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="19.5.2015 20:50:27" />
   <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="17.5.2015 21:08:34" />
   <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="17.5.2015 21:08:34" />
   <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="17.5.2015 21:08:34" />
@@ -36,7 +34,7 @@
   <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\packages\Microsoft.Net.Http.2.2.28\lib\sl4-windowsphone71\System.Net.Http.Primitives.xml" archivePath="System.Net.Http.Primitives.xml" lastWriteTime="17.5.2015 21:08:37" />
   <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="17.5.2015 21:08:34" />
   <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="17.5.2015 21:08:34" />
-  <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="19.5.2015 0:53:33" />
-  <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="19.5.2015 0:59:25" />
-  <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="19.5.2015 0:53:32" />
+  <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="19.5.2015 20:50:27" />
+  <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\MDILProjectFiles.xml" archivePath="MDILProjectFiles.xml" lastWriteTime="19.5.2015 20:50:27" />
+  <file source="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\AppxManifest.xml" archivePath="AppxManifest.xml" lastWriteTime="19.5.2015 20:50:27" />
 </xapCache>

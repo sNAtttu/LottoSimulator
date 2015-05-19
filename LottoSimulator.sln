@@ -5,21 +5,9 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoSimulator", "LottoSimulator\LottoSimulator.csproj", "{87757E92-563A-4E40-A318-903FD72A78FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LottoSimulatorService", "LottoSimulatorService\LottoSimulatorService.csproj", "{45839E36-8F5D-47EB-A4BE-ADC6D2FC2330}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotterySimulatorService", "LottoSimulatorService\LotterySimulatorService.csproj", "{45839E36-8F5D-47EB-A4BE-ADC6D2FC2330}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://ainacom.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = LottoSimulator\\LottoSimulator.csproj
-		SccProjectName1 = LottoSimulator
-		SccLocalPath1 = LottoSimulator
-		SccProjectUniqueName2 = LottoSimulatorService\\LottoSimulatorService.csproj
-		SccProjectName2 = LottoSimulatorService
-		SccLocalPath2 = LottoSimulatorService
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM = Debug|ARM

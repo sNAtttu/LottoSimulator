@@ -20,8 +20,8 @@ namespace LottoSimulator
         public static PhoneApplicationFrame RootFrame { get; private set; }
 
         public static MobileServiceClient MobileService = new MobileServiceClient(
-            "https://lottosimulatorservice.azure-mobile.net/",
-             "MJRdbguKLfLFZYjVYJxFFozQdLmdQR83"
+                  "https://lotterysimulator.azure-mobile.net/",
+                  "AtJLOdCKBvknFogcFrdAaeQQRmqsYU31"
         );
 
         /// <summary>

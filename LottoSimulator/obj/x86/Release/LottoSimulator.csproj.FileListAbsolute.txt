@@ -94,7 +94,6 @@ C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\New
 C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\System.Net.Http.xml
 C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\System.Net.Http.Extensions.xml
 C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\x86\Release\System.Net.Http.Primitives.xml
-C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\LottoSimulator.csprojResolveAssemblyReference.cache
 C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\App.g.cs
 C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\MainPage.g.cs
 C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\Views\HelpMenu\HelpMenu.g.cs
@@ -130,3 +129,19 @@ C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\Mul
 C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\ProjectArchitectures.txt
 C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\MDILProjectFiles.xml
 C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\XapCacheFile.xml
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\Microsoft.WindowsAzure.Mobile\layout.resfiles
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\Microsoft.WindowsAzure.Mobile\layout.resfiles.intermediate
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\Microsoft.WindowsAzure.Mobile\Resources.resfiles
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\Microsoft.WindowsAzure.Mobile\Resources.resfiles.intermediate
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\Microsoft.WindowsAzure.Mobile\pri.resfiles
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\Microsoft.WindowsAzure.Mobile\pri.resfiles.intermediate
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\Microsoft.WindowsAzure.Mobile\priconfig.xml
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\Microsoft.WindowsAzure.Mobile\priconfig.xml.intermediate
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\System.Net.Http\layout.resfiles
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\System.Net.Http\layout.resfiles.intermediate
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\System.Net.Http\Resources.resfiles
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\System.Net.Http\Resources.resfiles.intermediate
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\System.Net.Http\pri.resfiles
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\System.Net.Http\pri.resfiles.intermediate
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\System.Net.Http\priconfig.xml
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\x86\Release\System.Net.Http\priconfig.xml.intermediate
