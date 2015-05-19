@@ -5,7 +5,7 @@
     <Language code="fi" />
     <Language code="fi-FI" />
   </Languages>
-  <App xmlns="" ProductID="{87757e92-563a-4e40-a318-903fd72a78ff}" Title="LottoSimulator" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="LottoSimulator author" Description="Sample description" SDOptOut="false" BackUpOptOut="false" Publisher="LottoSimulator" PublisherID="{ac8f8aac-2083-41c7-9657-a11276b79976}">
+  <App xmlns="" ProductID="{87757e92-563a-4e40-a318-903fd72a78ff}" Title="Lottery Simulator" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="LottoSimulator author" Description="Sample description" SDOptOut="false" BackUpOptOut="false" Publisher="LottoSimulator" PublisherID="{ac8f8aac-2083-41c7-9657-a11276b79976}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
@@ -23,7 +23,7 @@
           <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
           <Count>0</Count>
           <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
-          <Title>LottoSimulator</Title>
+          <Title>Lottery Simulator</Title>
           <BackContent>
           </BackContent>
           <BackBackgroundImageURI>
