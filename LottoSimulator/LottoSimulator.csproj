@@ -164,7 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\add.png" />
-    <Content Include="Assets\ApplicationIcon.png" />
+    <Content Include="Assets\ApplicationIconv2.png" />
     <Content Include="Assets\cancel.png" />
     <Content Include="Assets\check.png" />
     <Content Include="Assets\Map_pin1.png" />

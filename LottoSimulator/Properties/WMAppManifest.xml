@@ -5,8 +5,8 @@
     <Language code="fi" />
     <Language code="fi-FI" />
   </Languages>
-  <App xmlns="" ProductID="{87757e92-563a-4e40-a318-903fd72a78ff}" Title="Lottery Simulator" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="LottoSimulator author" Description="Sample description" SDOptOut="false" BackUpOptOut="false" Publisher="LottoSimulator" PublisherID="{ac8f8aac-2083-41c7-9657-a11276b79976}">
-    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
+  <App xmlns="" ProductID="{87757e92-563a-4e40-a318-903fd72a78ff}" Title="Lottery Simulator" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Santeri Nousiainen" Description="Simple simulator for all lottery fans." SDOptOut="false" BackUpOptOut="false" Publisher="Sane Software" PublisherID="{ac8f8aac-2083-41c7-9657-a11276b79976}">
+    <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIconv2.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_SENSORS" />
@@ -20,9 +20,9 @@
     <Tokens>
       <PrimaryToken TokenID="LottoSimulatorToken" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileSmall.png</SmallImageURI>
+          <SmallImageURI IsRelative="true" IsResource="false">Assets\ApplicationIconv2.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\Tiles\FlipCycleTileMedium.png</BackgroundImageURI>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Assets\ApplicationIconv2.png</BackgroundImageURI>
           <Title>Lottery Simulator</Title>
           <BackContent>
           </BackContent>

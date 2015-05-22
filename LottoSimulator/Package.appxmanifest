@@ -5,7 +5,7 @@
   <Properties>
     <DisplayName>Lottery Simulator</DisplayName>
     <PublisherDisplayName>Sane Software</PublisherDisplayName>
-    <Logo>Assets\ApplicationIcon.png</Logo>
+    <Logo>Assets\ApplicationIconv2.png</Logo>
   </Properties>
   <Prerequisites>
     <OSMinVersion>6.3.1</OSMinVersion>
@@ -16,10 +16,10 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="AGHost.exe" EntryPoint="MainPage.xaml">
-      <m3:VisualElements DisplayName="Lottery Simulator" Square150x150Logo="Assets\ApplicationIcon.png" Square44x44Logo="Assets\ApplicationIcon.png" Description="LottoSimulator" ForegroundText="light" BackgroundColor="#464646">
-        <m3:DefaultTile Square71x71Logo="Assets\ApplicationIcon.png">
+      <m3:VisualElements DisplayName="Lottery Simulator" Square150x150Logo="Assets\ApplicationIconv2.png" Square44x44Logo="Assets\ApplicationIconv2.png" Description="Simple simulator for all lottery fans." ForegroundText="light" BackgroundColor="#464646">
+        <m3:DefaultTile Square71x71Logo="Assets\ApplicationIconv2.png">
         </m3:DefaultTile>
-        <m3:SplashScreen Image="Assets\ApplicationIcon.png" />
+        <m3:SplashScreen Image="Assets\ApplicationIconv2.png" />
       </m3:VisualElements>
       <Extensions>
         <Extension Category="windows.backgroundTasks" EntryPoint="AgHost.BackgroundTask">

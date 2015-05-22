@@ -67,8 +67,8 @@
     <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\add.png">
       <PackagePath>Assets\add.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\ApplicationIcon.png">
-      <PackagePath>Assets\ApplicationIcon.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\ApplicationIconv2.png">
+      <PackagePath>Assets\ApplicationIconv2.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\cancel.png">
