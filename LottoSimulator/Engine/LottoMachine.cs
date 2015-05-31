@@ -23,8 +23,7 @@ namespace LottoSimulator.Engine
                 if(!usedNumbers.Contains(temp))
                 {
                     winningNumbers.Add(temp);
-                    usedNumbers.Add(temp);
-                    numbersLeft--;     
+                    usedNumbers.Add(temp);  
                 }
                 else
                 {

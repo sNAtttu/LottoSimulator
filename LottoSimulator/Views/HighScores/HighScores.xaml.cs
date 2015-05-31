@@ -26,8 +26,10 @@ namespace LottoSimulator.Views.HighScores
         {
             try
             {
+                txtboxLoading.Text = "Loading highscores.....";
                 highscores = await highscoreTable.ToCollectionAsync();
                 highscoreTemplate.ItemsSource = highscores;
+                txtboxLoading.Text = string.Empty;
             }
             catch(Exception ex)
             {

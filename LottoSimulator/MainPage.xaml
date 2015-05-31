@@ -35,17 +35,17 @@
             <TextBlock x:Name="playerNumbers" HorizontalAlignment="Left" Margin="187,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
             <TextBlock x:Name="LotteryResults" HorizontalAlignment="Left" Margin="10,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,216,0,0" TextWrapping="Wrap" Text="Money spent:" VerticalAlignment="Top" Width="302"/>
-            <TextBlock x:Name="EuroCounterText" HorizontalAlignment="Left" Margin="187,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-1.15,0.574" Text="0 Euros."/>
+            <TextBlock x:Name="EuroCounterText" HorizontalAlignment="Left" Margin="168,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-1.15,0.574" Text="0 Euros."/>
             <TextBlock HorizontalAlignment="Left" Margin="10,248,0,0" TextWrapping="Wrap" Text="7/7 matches:" VerticalAlignment="Top"/>
-            <TextBlock x:Name="JackPotText" HorizontalAlignment="Left" Margin="187,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0 times."/>
+            <TextBlock x:Name="JackPotText" HorizontalAlignment="Left" Margin="168,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0 times."/>
             <Button x:Name="PlayUntilWin" Content="Make me a winner!" HorizontalAlignment="Center" Margin="0,0,212,83" VerticalAlignment="Bottom" Width="244" Click="PlayUntilWin_Click" IsEnabled="False"/>
             <TextBlock x:Name="JackpotStatusBox" HorizontalAlignment="Left" Margin="10,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,280,0,0" TextWrapping="Wrap" Text="Best match:" VerticalAlignment="Top"/>
-            <TextBlock x:Name="largestHitSoFar" HorizontalAlignment="Left" Margin="187,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0" RenderTransformOrigin="0.517,0.5" Width="69"/>
+            <TextBlock x:Name="largestHitSoFar" HorizontalAlignment="Left" Margin="167,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0" RenderTransformOrigin="-0.5,0.574" Width="69"/>
             <TextBlock x:Name="winrow" HorizontalAlignment="Left" Margin="10,312,0,0" TextWrapping="Wrap" Text="Best row:" VerticalAlignment="Top"/>
-            <TextBlock x:Name="HighestRowText" HorizontalAlignment="Left" Margin="187,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0" Width="244"/>
+            <TextBlock x:Name="HighestRowText" HorizontalAlignment="Left" Margin="167,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="0" Width="244"/>
             <Button x:Name="uploadHighscore" Content="Save full hit!" HorizontalAlignment="Left" Margin="-5,520,0,0" VerticalAlignment="Top" Width="451" Click="uploadHighscore_Click" IsEnabled="False"/>
-            <TextBlock HorizontalAlignment="Left" Margin="261,280,0,0" TextWrapping="Wrap" Text="/ 7 right." VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="244,280,0,0" TextWrapping="Wrap" Text="/ 7 right." VerticalAlignment="Top" RenderTransformOrigin="0.033,0.648"/>
             <TextBlock Text="Total rows played: " HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,232"></TextBlock>
             <TextBlock x:Name="RowCountTextBlock" HorizontalAlignment="Left" Margin="187,344,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
         </Grid>
