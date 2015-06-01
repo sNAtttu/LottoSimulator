@@ -5,7 +5,7 @@
     <Language code="fi" />
     <Language code="fi-FI" />
   </Languages>
-  <App xmlns="" ProductID="{87757e92-563a-4e40-a318-903fd72a78ff}" Title="Lottery Simulator" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Santeri Nousiainen" Description="Simple simulator for all lottery fans." SDOptOut="false" BackUpOptOut="false" Publisher="Sane Software" PublisherID="{ac8f8aac-2083-41c7-9657-a11276b79976}">
+  <App xmlns="" ProductID="{87757e92-563a-4e40-a318-903fd72a78ff}" Title="Lottery Simulator" RuntimeType="Silverlight" Version="1.0.1.0" Genre="apps.normal" Author="Santeri Nousiainen" Description="Simple simulator for all lottery fans." SDOptOut="false" BackUpOptOut="false" Publisher="Sane Software" PublisherID="{ac8f8aac-2083-41c7-9657-a11276b79976}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIconv2.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />

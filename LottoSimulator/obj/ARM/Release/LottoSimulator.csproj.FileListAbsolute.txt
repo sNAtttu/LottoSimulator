@@ -128,6 +128,13 @@ C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\ARM\Release\Mul
 C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\ARM\Release\ProjectArchitectures.txt
 C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\ARM\Release\MDILProjectFiles.xml
 C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\ARM\Release\XapCacheFile.xml
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\ARM\Release\Microsoft.Phone.Controls.Maps.dll
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\ARM\Release\Microsoft.Advertising.Mobile.Common.dll
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\ARM\Release\Microsoft.Advertising.Mobile.Common.xml
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\ARM\Release\Microsoft.Advertising.Mobile.dll
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\ARM\Release\Microsoft.Advertising.Mobile.UI.dll
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\ARM\Release\Microsoft.Advertising.Mobile.UI.xml
+C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\ARM\Release\Microsoft.Advertising.Mobile.xml
 C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\ARM\Release\Microsoft.WindowsAzure.Mobile\layout.resfiles
 C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\ARM\Release\Microsoft.WindowsAzure.Mobile\layout.resfiles.intermediate
 C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\ARM\Release\Microsoft.WindowsAzure.Mobile\Resources.resfiles
