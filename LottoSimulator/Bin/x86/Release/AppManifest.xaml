@@ -1,7 +1,11 @@
 ﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="LottoSimulator" EntryPointType="LottoSimulator.App" RuntimeVersion="6.7.50308.0">
   <Deployment.Parts>
     <AssemblyPart x:Name="LottoSimulator" Source="LottoSimulator.dll" />
+    <AssemblyPart x:Name="Microsoft.Advertising.Mobile.Common" Source="Microsoft.Advertising.Mobile.Common.dll" />
+    <AssemblyPart x:Name="Microsoft.Advertising.Mobile" Source="Microsoft.Advertising.Mobile.dll" />
+    <AssemblyPart x:Name="Microsoft.Advertising.Mobile.UI" Source="Microsoft.Advertising.Mobile.UI.dll" />
     <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Maps" Source="Microsoft.Phone.Controls.Maps.dll" />
     <AssemblyPart x:Name="Microsoft.WindowsAzure.Mobile" Source="Microsoft.WindowsAzure.Mobile.dll" />
     <AssemblyPart x:Name="Microsoft.WindowsAzure.Mobile.Ext" Source="Microsoft.WindowsAzure.Mobile.Ext.dll" />
     <AssemblyPart x:Name="Microsoft.WindowsAzure.Mobile.UI" Source="Microsoft.WindowsAzure.Mobile.UI.dll" />

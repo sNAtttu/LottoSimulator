@@ -2,21 +2,21 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Machine>SNATTU</Machine>
-    <WindowsUser>Santeri</WindowsUser>
+    <WindowsUser>Sane</WindowsUser>
     <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
     <SolutionConfiguration>Release|ARM</SolutionConfiguration>
     <PackageArchitecture>arm</PackageArchitecture>
     <PackageIdentityName>87757e92-563a-4e40-a318-903fd72a78ff</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\obj\ARM\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\obj\ARM\Release\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\ARM\Release\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\Bin\ARM\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\ARM\Release\LottoSimulator.dll">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\Bin\ARM\Release\LottoSimulator.dll">
       <PackagePath>LottoSimulator.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.1\ExtensionSDKs\Microsoft.Advertising\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.Common.dll">
@@ -34,25 +34,25 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.1\Libraries\Microsoft.Phone.Controls.Maps.dll">
       <PackagePath>Microsoft.Phone.Controls.Maps.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\packages\WindowsAzure.MobileServices.1.3.2\lib\wp8\Microsoft.WindowsAzure.Mobile.dll">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\packages\WindowsAzure.MobileServices.1.3.2\lib\wp8\Microsoft.WindowsAzure.Mobile.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\packages\WindowsAzure.MobileServices.1.3.2\lib\wp8\Microsoft.WindowsAzure.Mobile.Ext.dll">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\packages\WindowsAzure.MobileServices.1.3.2\lib\wp8\Microsoft.WindowsAzure.Mobile.Ext.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.Ext.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\packages\WindowsAzure.MobileServices.1.3.2\lib\wp8\Microsoft.WindowsAzure.Mobile.UI.dll">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\packages\WindowsAzure.MobileServices.1.3.2\lib\wp8\Microsoft.WindowsAzure.Mobile.UI.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.UI.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\packages\Microsoft.Net.Http.2.2.28\lib\sl4-windowsphone71\System.Net.Http.dll">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.dll">
       <PackagePath>System.Net.Http.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\packages\Microsoft.Net.Http.2.2.28\lib\sl4-windowsphone71\System.Net.Http.Extensions.dll">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.dll">
       <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\packages\Microsoft.Net.Http.2.2.28\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll">
       <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.1\ExtensionSDKs\Microsoft.Advertising\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.Common.xml">
@@ -64,65 +64,65 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.1\ExtensionSDKs\Microsoft.Advertising\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.Mobile.xml">
       <PackagePath>Microsoft.Advertising.Mobile.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\packages\WindowsAzure.MobileServices.1.3.2\lib\wp8\Microsoft.WindowsAzure.Mobile.xml">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\packages\WindowsAzure.MobileServices.1.3.2\lib\wp8\Microsoft.WindowsAzure.Mobile.xml">
       <PackagePath>Microsoft.WindowsAzure.Mobile.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\packages\WindowsAzure.MobileServices.1.3.2\lib\wp8\Microsoft.WindowsAzure.Mobile.Ext.xml">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\packages\WindowsAzure.MobileServices.1.3.2\lib\wp8\Microsoft.WindowsAzure.Mobile.Ext.xml">
       <PackagePath>Microsoft.WindowsAzure.Mobile.Ext.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\packages\WindowsAzure.MobileServices.1.3.2\lib\wp8\Microsoft.WindowsAzure.Mobile.UI.xml">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\packages\WindowsAzure.MobileServices.1.3.2\lib\wp8\Microsoft.WindowsAzure.Mobile.UI.xml">
       <PackagePath>Microsoft.WindowsAzure.Mobile.UI.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.xml">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\packages\Newtonsoft.Json.7.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.xml">
       <PackagePath>Newtonsoft.Json.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\packages\Microsoft.Net.Http.2.2.28\lib\sl4-windowsphone71\System.Net.Http.xml">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.xml">
       <PackagePath>System.Net.Http.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\packages\Microsoft.Net.Http.2.2.28\lib\sl4-windowsphone71\System.Net.Http.Extensions.xml">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Extensions.xml">
       <PackagePath>System.Net.Http.Extensions.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\packages\Microsoft.Net.Http.2.2.28\lib\sl4-windowsphone71\System.Net.Http.Primitives.xml">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\packages\Microsoft.Net.Http.2.2.29\lib\sl4-windowsphone71\System.Net.Http.Primitives.xml">
       <PackagePath>System.Net.Http.Primitives.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\add.png">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\Assets\add.png">
       <PackagePath>Assets\add.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\ApplicationIconv2.png">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\Assets\ApplicationIconv2.png">
       <PackagePath>Assets\ApplicationIconv2.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\cancel.png">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\Assets\cancel.png">
       <PackagePath>Assets\cancel.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\check.png">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\Assets\check.png">
       <PackagePath>Assets\check.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\Map_pin1.png">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\Assets\Map_pin1.png">
       <PackagePath>Assets\Map_pin1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\questionmark.png">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\Assets\questionmark.png">
       <PackagePath>Assets\questionmark.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\refresh.png">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\Assets\refresh.png">
       <PackagePath>Assets\refresh.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\Tiles\FlipCycleTileLarge.png">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\Assets\Tiles\FlipCycleTileLarge.png">
       <PackagePath>Assets\Tiles\FlipCycleTileLarge.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\Tiles\FlipCycleTileMedium.png">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\Assets\Tiles\FlipCycleTileMedium.png">
       <PackagePath>Assets\Tiles\FlipCycleTileMedium.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\Tiles\FlipCycleTileSmall.png">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\Assets\Tiles\FlipCycleTileSmall.png">
       <PackagePath>Assets\Tiles\FlipCycleTileSmall.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\Tiles\IconicTileMediumLarge.png">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\Assets\Tiles\IconicTileMediumLarge.png">
       <PackagePath>Assets\Tiles\IconicTileMediumLarge.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Assets\Tiles\IconicTileSmall.png">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\Assets\Tiles\IconicTileSmall.png">
       <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\Bin\ARM\Release\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\Bin\ARM\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

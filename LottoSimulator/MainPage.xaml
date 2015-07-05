@@ -67,7 +67,7 @@
             <TextBlock HorizontalAlignment="Left" Margin="244,280,0,0" TextWrapping="Wrap" Text="/ 7 right." VerticalAlignment="Top" RenderTransformOrigin="0.033,0.648"/>
             <TextBlock Text="Total rows played: " HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,232"/>
             <TextBlock x:Name="RowCountTextBlock" HorizontalAlignment="Left" Margin="187,344,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
-            <UI:AdControl ApplicationId="8881d526-0c21-45b0-b0b2-e97bafeac9ab" AdUnitId="11487093" HorizontalAlignment="Left" Height="75" Margin="10,376,0,0" VerticalAlignment="Top" Width="436"/>
+            <UI:AdControl ApplicationId="8881d526-0c21-45b0-b0b2-e97bafeac9ab" AdUnitId="11523757" HorizontalAlignment="Left" Height="50" Margin="0,402,0,0" VerticalAlignment="Top" Width="320"/>
 
         </Grid>
 

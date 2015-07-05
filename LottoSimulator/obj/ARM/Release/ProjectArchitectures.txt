@@ -1,1 +1,1 @@
-C:\Users\Santeri\Source\Repos\LottoSimulator2\LottoSimulator\LottoSimulator.csproj;arm
+C:\Users\Sane\Source\Repos\LottoSimulator\LottoSimulator\LottoSimulator.csproj;arm

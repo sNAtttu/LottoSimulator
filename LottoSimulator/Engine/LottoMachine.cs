@@ -13,17 +13,26 @@ namespace LottoSimulator.Engine
         public LottoModel GenerateNumbers(LottoModel lotto)
         {
             Random rng = new Random();
-            int numbersLeft = 39;
+            int numbersLeft = 40;
             List<int> usedNumbers = new List<int>();
             List<int> winningNumbers = new List<int>();
+            List<int> winningXtraNumbers = new List<int>();
 
             for (int i = 0; i < 9; i++)
             {
                 int temp = rng.Next(1,numbersLeft);
                 if(!usedNumbers.Contains(temp))
                 {
-                    winningNumbers.Add(temp);
-                    usedNumbers.Add(temp);  
+                    if (winningNumbers.Count == 7)
+                    {
+                        winningXtraNumbers.Add(temp);
+                        usedNumbers.Add(temp);
+                    }
+                    else
+                    {
+                        winningNumbers.Add(temp);
+                        usedNumbers.Add(temp);
+                    }
                 }
                 else
                 {
@@ -32,6 +41,7 @@ namespace LottoSimulator.Engine
             }
 
             winningNumbers.Sort();
+            winningXtraNumbers.Sort();
             lotto.OneBall = winningNumbers[0];
             lotto.TwoBall = winningNumbers[1];
             lotto.ThreeBall = winningNumbers[2];
@@ -39,8 +49,8 @@ namespace LottoSimulator.Engine
             lotto.FiveBall = winningNumbers[4];
             lotto.SixBall = winningNumbers[5];
             lotto.SevenBall = winningNumbers[6];
-            lotto.ExtraOne = winningNumbers[7];
-            lotto.ExtraTwo = winningNumbers[8];
+            lotto.ExtraOne = winningXtraNumbers[0];
+            lotto.ExtraTwo = winningXtraNumbers[1];
 
             return lotto;
         }

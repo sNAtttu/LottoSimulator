@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="43639SaneSoftware.LotterySimulator" Publisher="CN=E951E49F-3C19-4DA5-A8E5-D40B7F630E1F" Version="1.0.1.0" />
+  <Identity Name="43639SaneSoftware.LotterySimulator" Publisher="CN=E951E49F-3C19-4DA5-A8E5-D40B7F630E1F" Version="1.0.2.0" />
   <mp:PhoneIdentity PhoneProductId="87757e92-563a-4e40-a318-903fd72a78ff" PhonePublisherId="ac8f8aac-2083-41c7-9657-a11276b79976" />
   <Properties>
     <DisplayName>Lottery Simulator</DisplayName>
